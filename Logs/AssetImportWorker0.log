@@ -1,0 +1,1510 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.39f1 (fb3b7b32f191) revision 16464763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'es' Physical Memory: 32695 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.39f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Horus
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59873
+Successfully changed project path to: C:/Horus
+C:/Horus
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [13516] Host "[IP] 192.168.100.21 [Port] 0 [Flags] 2 [Guid] 2177980113 [EditorId] 2177980113 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62OSSKL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [13516] Host "[IP] 192.168.100.21 [Port] 0 [Flags] 2 [Guid] 2177980113 [EditorId] 2177980113 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62OSSKL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 81.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.39f1 (fb3b7b32f191)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Horus/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 SUPER (ID=0x1e81)
+    Vendor:   NVIDIA
+    VRAM:     7987 MB
+    Driver:   32.0.15.5599
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.012783 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 306 ms
+Refreshing native plugins compatible for Editor in 90.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.152 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1152ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (922ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (117ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (726ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (422ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (90ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (153ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.017710 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.523 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1524ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1257ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (318ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (745ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (591ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (46.8 KB). Loaded Objects now: 3617.
+Memory consumption went from 113.9 MB to 113.8 MB.
+Total: 2.593000 ms (FindLiveObjects: 0.237100 ms CreateObjectMapping: 0.194300 ms MarkObjects: 2.084700 ms  DeleteObjects: 0.076000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 42597.814381 seconds.
+  path: Assets/Audio/Horus_Main_Theme.mp3
+  artifactKey: Guid(a89aeba66bb00e647b1899c781aa34c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Audio/Horus_Main_Theme.mp3 using Guid(a89aeba66bb00e647b1899c781aa34c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd13413704c99312e8da13e296021b32') in 0.029165 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Audio
+  artifactKey: Guid(8a11f4fc2534a92488f7477bb102e2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Audio using Guid(8a11f4fc2534a92488f7477bb102e2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26331c17ac8cda640a9237bc7f947d94') in 0.001631 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012058 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.436 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1438ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1164ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (284ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (692ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (557ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3154 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (21.9 KB). Loaded Objects now: 3620.
+Memory consumption went from 113.4 MB to 113.4 MB.
+Total: 2.455200 ms (FindLiveObjects: 0.234600 ms CreateObjectMapping: 0.195200 ms MarkObjects: 1.999600 ms  DeleteObjects: 0.024300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 28.957351 seconds.
+  path: Assets/Audio/Horus_Main_Theme.mp3
+  artifactKey: Guid(a89aeba66bb00e647b1899c781aa34c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Audio/Horus_Main_Theme.mp3 using Guid(a89aeba66bb00e647b1899c781aa34c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e2af064e1a4905f092adc55fc77f69') in 0.085993 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 158.372282 seconds.
+  path: Assets/Prefab Enemies/Ghoul.prefab
+  artifactKey: Guid(5b889ec2f64bed542991567d4660ea71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefab Enemies/Ghoul.prefab using Guid(5b889ec2f64bed542991567d4660ea71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f0f6f8b1a86d4ef392a5c38762f076c') in 0.033254 seconds 
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 5.401749 seconds.
+  path: Assets/Prefab Enemies/Ghoul.prefab
+  artifactKey: Guid(5b889ec2f64bed542991567d4660ea71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefab Enemies/Ghoul.prefab using Guid(5b889ec2f64bed542991567d4660ea71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb73bdf08762c11aa45c82f7743c8209') in 0.009746 seconds 
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012952 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.453 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1454ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1174ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (275ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (715ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (572ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3154 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (22.0 KB). Loaded Objects now: 3632.
+Memory consumption went from 113.6 MB to 113.6 MB.
+Total: 2.944600 ms (FindLiveObjects: 0.242800 ms CreateObjectMapping: 0.174200 ms MarkObjects: 2.502000 ms  DeleteObjects: 0.024400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012217 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.447 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1448ms)
+		BeginReloadAssembly (165ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1157ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (272ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (693ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (556ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3154 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (23.0 KB). Loaded Objects now: 3635.
+Memory consumption went from 113.7 MB to 113.6 MB.
+Total: 2.848900 ms (FindLiveObjects: 0.246300 ms CreateObjectMapping: 0.191900 ms MarkObjects: 2.379000 ms  DeleteObjects: 0.030900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012949 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.534 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1535ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1236ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (294ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (730ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (588ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3154 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (21.9 KB). Loaded Objects now: 3638.
+Memory consumption went from 113.7 MB to 113.6 MB.
+Total: 2.540100 ms (FindLiveObjects: 0.259100 ms CreateObjectMapping: 0.198200 ms MarkObjects: 2.054800 ms  DeleteObjects: 0.026900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014293 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.540 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1541ms)
+		BeginReloadAssembly (164ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1255ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (307ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (748ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (600ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3154 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (22.9 KB). Loaded Objects now: 3641.
+Memory consumption went from 113.7 MB to 113.6 MB.
+Total: 2.556900 ms (FindLiveObjects: 0.238000 ms CreateObjectMapping: 0.184200 ms MarkObjects: 2.106800 ms  DeleteObjects: 0.027000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014075 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.526 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1528ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1250ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (290ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (762ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (613ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3154 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (22.0 KB). Loaded Objects now: 3644.
+Memory consumption went from 113.7 MB to 113.7 MB.
+Total: 3.315000 ms (FindLiveObjects: 0.260000 ms CreateObjectMapping: 0.225700 ms MarkObjects: 2.782100 ms  DeleteObjects: 0.046100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012908 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.559 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1559ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1282ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (288ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (754ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (595ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3154 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (22.0 KB). Loaded Objects now: 3647.
+Memory consumption went from 113.7 MB to 113.7 MB.
+Total: 3.862600 ms (FindLiveObjects: 0.248900 ms CreateObjectMapping: 0.464100 ms MarkObjects: 3.113600 ms  DeleteObjects: 0.034900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013480 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.518 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1518ms)
+		BeginReloadAssembly (170ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1235ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (286ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (752ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (590ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3154 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (21.9 KB). Loaded Objects now: 3650.
+Memory consumption went from 113.7 MB to 113.7 MB.
+Total: 2.646900 ms (FindLiveObjects: 0.245600 ms CreateObjectMapping: 0.218800 ms MarkObjects: 2.155600 ms  DeleteObjects: 0.026000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 687.825425 seconds.
+  path: Assets/Audio/Horus_Main_Theme.mp3
+  artifactKey: Guid(a89aeba66bb00e647b1899c781aa34c6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Audio/Horus_Main_Theme.mp3 using Guid(a89aeba66bb00e647b1899c781aa34c6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a51195dbf0b65fb67d343338e3b4d1af') in 0.158670 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Logger/ELogger.cs
+  artifactKey: Guid(d0d39b1262496e041ade8f5cc362ec22) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Logger/ELogger.cs using Guid(d0d39b1262496e041ade8f5cc362ec22) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '90ca510d472c33428c97adc6355bb714') in 0.011685 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/MainThreadDispatcher.cs
+  artifactKey: Guid(2f4a5ed4e1cb4654194d37b8055cdf6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/MainThreadDispatcher.cs using Guid(2f4a5ed4e1cb4654194d37b8055cdf6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1b237662b1caa50db2dbaf3ef53893f9') in 0.006698 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Menu/MenuJugar.png
+  artifactKey: Guid(ab7e4e92536870d47b0bd0ea80d19331) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Menu/MenuJugar.png using Guid(ab7e4e92536870d47b0bd0ea80d19331) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '37e3df4b1f53812eb6a03c9b35d64166') in 0.088817 seconds 
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/csc.rsp
+  artifactKey: Guid(a0608d463a9061f4b9365113f21e495c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/csc.rsp using Guid(a0608d463a9061f4b9365113f21e495c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fbf9809e9415578c78f63b41497d0eb2') in 0.008324 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Preferences/PreferenceStorageAccessor.cs
+  artifactKey: Guid(6709148275a61fb4fa45aff1eff97e04) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Preferences/PreferenceStorageAccessor.cs using Guid(6709148275a61fb4fa45aff1eff97e04) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0c1502bc01525a3f0852abfcdac1bd7e') in 0.007561 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.xml
+  artifactKey: Guid(eeeb60c22a890f5499626797217dc937) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.xml using Guid(eeeb60c22a890f5499626797217dc937) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '878f4289d817d8aa37bdecbba8447aed') in 0.013604 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/EditorCoroutines/EditorCoroutineUtility.cs
+  artifactKey: Guid(72a0c58c55ea7e349a5e0fbb96084b19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/EditorCoroutines/EditorCoroutineUtility.cs using Guid(72a0c58c55ea7e349a5e0fbb96084b19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'aeb4858a2425983e84f8f88eb2812f6b') in 0.005651 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/GPT-NOTICE.TXT
+  artifactKey: Guid(6fe753da7d274f647a60577c62fd6fdd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/GPT-NOTICE.TXT using Guid(6fe753da7d274f647a60577c62fd6fdd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6eda6effc2cd6dfabe93983299ed5735') in 0.011994 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.YamlDotNet.pdb
+  artifactKey: Guid(e69d5c40ec9d408468bf0f40aaf8236e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.YamlDotNet.pdb using Guid(e69d5c40ec9d408468bf0f40aaf8236e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '98437f6f0af5b6e4e08b9b5e844dac31') in 0.014778 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/TinyJson/JsonWriter.cs
+  artifactKey: Guid(97518c9de2a511a45b05b1c7d5905eea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/TinyJson/JsonWriter.cs using Guid(97518c9de2a511a45b05b1c7d5905eea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6d74464654281d2a046ce0247df62982') in 0.005928 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/FeedbackWindow.cs
+  artifactKey: Guid(55a28bf252c8fc34b95779a8a379a170) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/FeedbackWindow.cs using Guid(55a28bf252c8fc34b95779a8a379a170) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '439aafec702fae2f08b0fb978902e8a6') in 0.005722 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Animations/Ghoul/Ghoul.controller
+  artifactKey: Guid(d6193ce0e5660f74c954f50328b9c9ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/Ghoul/Ghoul.controller using Guid(d6193ce0e5660f74c954f50328b9c9ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '563435a082c8a9aa20974d9bd27684e6') in 0.010630 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Horus/Horus_Walk 1.png
+  artifactKey: Guid(6664ee03b7ce0cb4c9ddbfd8b5c51597) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Horus/Horus_Walk 1.png using Guid(6664ee03b7ce0cb4c9ddbfd8b5c51597) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1efe062edcc60dc2ad82cebdf78fe99b') in 0.128083 seconds 
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.Sinks.PersistentFile.deps.json
+  artifactKey: Guid(84d89e9bb29356344901120984784b12) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.Sinks.PersistentFile.deps.json using Guid(84d89e9bb29356344901120984784b12) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '98f9ed8dd4776149984bcc8cedeb04a3') in 0.010481 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Input/Binary2TextExec.cs
+  artifactKey: Guid(5411fd430275a4a47bd4719a0c38b0f7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Input/Binary2TextExec.cs using Guid(5411fd430275a4a47bd4719a0c38b0f7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a4a874d381f0a2aa867e6328107e43fa') in 0.005942 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Animations/MenuInicio/MenuManager.controller
+  artifactKey: Guid(bb08db7714c1b4049a46be34cc1d816b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/MenuInicio/MenuManager.controller using Guid(bb08db7714c1b4049a46be34cc1d816b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3e0554ae4f266aed5bc2fbf7ea0617a4') in 0.006157 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.SynchronizerModel.dll
+  artifactKey: Guid(9fb1198d384913848bd64cd40982b65a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.SynchronizerModel.dll using Guid(9fb1198d384913848bd64cd40982b65a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '882f54302f23b04e7cc0b534c66692c9') in 0.013338 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/SpawnerGhoul.cs
+  artifactKey: Guid(1665db539ac1a6843ab5d881afac9160) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scripts/SpawnerGhoul.cs using Guid(1665db539ac1a6843ab5d881afac9160) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '07e2c508b0ef5ff502b4505636ef2e06') in 0.004783 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/AboutWindow.cs
+  artifactKey: Guid(ed0dea9d70eb98c46a75a1edc1c2c25b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/AboutWindow.cs using Guid(ed0dea9d70eb98c46a75a1edc1c2c25b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '386645ced1b737b9789e089ac0e4742d') in 0.005250 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.AsyncIO.deps.json
+  artifactKey: Guid(3ce914686f3b14546a86b8810c4d6ff3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.AsyncIO.deps.json using Guid(3ce914686f3b14546a86b8810c4d6ff3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4c6beab2b433019edd99fb8832f1a541') in 0.006642 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NaCl.pdb
+  artifactKey: Guid(af6abfe65be36b14f90809ae58ee5dfa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NaCl.pdb using Guid(af6abfe65be36b14f90809ae58ee5dfa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'db545881971ddd1ace02a3130c47045f') in 0.003913 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Input/Text2Yaml.cs
+  artifactKey: Guid(8004628d1153ff64aa82aec4a629f2f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Input/Text2Yaml.cs using Guid(8004628d1153ff64aa82aec4a629f2f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '045a9743ec8f10f3cc95751642287b22') in 0.004527 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NaCl.deps.json
+  artifactKey: Guid(c7533b4dc57f99140bec64427a9631cb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NaCl.deps.json using Guid(c7533b4dc57f99140bec64427a9631cb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ba80e9efb4c9a00c0fbf2348742543be') in 0.004293 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Animations/Intro/IntroLogo.anim
+  artifactKey: Guid(fe81ba533469b33408389d34fdc826e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/Intro/IntroLogo.anim using Guid(fe81ba533469b33408389d34fdc826e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4f3fa2a98804cb311d94c18286191f57') in 0.011948 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Logger/Attributes.cs
+  artifactKey: Guid(f9b7f8df4c252884ba942068fb335688) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Logger/Attributes.cs using Guid(f9b7f8df4c252884ba942068fb335688) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3881ed4fe38cab9aea409e2a59acf3ba') in 0.004970 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ScriptFinder.cs
+  artifactKey: Guid(951a95cb6f6d75148a7aa4b6d3a41494) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ScriptFinder.cs using Guid(951a95cb6f6d75148a7aa4b6d3a41494) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e9e49793d7571807cfe2bd150c82b71f') in 0.005448 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Animations/Horus/Horus_Walk.anim
+  artifactKey: Guid(e1291a30c6503314a810c294f70a1d38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/Horus/Horus_Walk.anim using Guid(e1291a30c6503314a810c294f70a1d38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b0bf34b1a9c431a0d5018e253426ff42') in 0.007220 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/SystemBinariesForDotNetStandard20.unitypackage
+  artifactKey: Guid(11400929f6bf5fb4ab1815de173cbb4b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/SystemBinariesForDotNetStandard20.unitypackage using Guid(11400929f6bf5fb4ab1815de173cbb4b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5e6f06a11e78ddfd662cd8c4ef5de2e2') in 0.009587 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Menu/Logo_Chums2.png
+  artifactKey: Guid(ad4c483eeef98c746b3a4dc94db802c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Menu/Logo_Chums2.png using Guid(ad4c483eeef98c746b3a4dc94db802c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '287e045ad987a9253a03e244c4f17217') in 0.296657 seconds 
+Number of asset objects unloaded after import = 69
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NaCl.dll
+  artifactKey: Guid(5bc6cc2dbe9c27f41b8998773ce3cd20) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NaCl.dll using Guid(5bc6cc2dbe9c27f41b8998773ce3cd20) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '70ce254726228a7957b041461bf6fbfd') in 0.005158 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.SynchronizerModel.pdb
+  artifactKey: Guid(cfbecca1a6d878b4f81b6d10c0df90f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.SynchronizerModel.pdb using Guid(cfbecca1a6d878b4f81b6d10c0df90f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e18f06034a309eae1dd2791a450c3e60') in 0.007461 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/Juego.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scenes/Juego.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8a61476acffd60dd3d406b4deb7bda4f') in 0.004615 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.deps.json
+  artifactKey: Guid(9f82e2b3635eb844eab5fe04c63babf1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.deps.json using Guid(9f82e2b3635eb844eab5fe04c63babf1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '927daac37ea27a7659bbc61f00a38109') in 0.005389 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Models/Menu/Pause_Menu.png
+  artifactKey: Guid(2b76dd342159c17438d96a1801895e23) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Menu/Pause_Menu.png using Guid(2b76dd342159c17438d96a1801895e23) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '38206f8a9f998e373a6a38eaa725296d') in 0.020614 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/StatusWindow.cs
+  artifactKey: Guid(9d894bcc3afc86e4ba4adadeca253e83) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/StatusWindow.cs using Guid(9d894bcc3afc86e4ba4adadeca253e83) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a4673c07410fe3aa87aa3e403dd74ad2') in 0.007720 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/NetMQInitializer.cs
+  artifactKey: Guid(55efa82695180f446a5c36267e1b2524) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/NetMQInitializer.cs using Guid(55efa82695180f446a5c36267e1b2524) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ed163d4e916c51177789b88dc4598b86') in 0.008185 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Animations/Pause/Image.controller
+  artifactKey: Guid(1ff5ab752e21fc346ac0898dee77278e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/Pause/Image.controller using Guid(1ff5ab752e21fc346ac0898dee77278e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f09337f5ef0f60820e0dc6257ad38282') in 0.006727 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Animations/Horus/Horus_Walk2.anim
+  artifactKey: Guid(e32a0c4abe089884a96885d90325e0e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/Horus/Horus_Walk2.anim using Guid(e32a0c4abe089884a96885d90325e0e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c6ae1392c7e134eea27bec06b20c78e6') in 0.006602 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/TinyJson/JsonParser.cs
+  artifactKey: Guid(092c3f83cada8a941b17466f294f22af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/TinyJson/JsonParser.cs using Guid(092c3f83cada8a941b17466f294f22af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '65f5e0cdc68e8eb9a78fe892009674c1') in 0.007254 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Logger/CommonTools.cs
+  artifactKey: Guid(35abd09553b402244a7e95c021eb70ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Logger/CommonTools.cs using Guid(35abd09553b402244a7e95c021eb70ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1f92c8d5d15043079175ae24f5576bcb') in 0.005057 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.SynchronizerModel.deps.json
+  artifactKey: Guid(15afaaeb05eb2a8448a747e63a26a329) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.SynchronizerModel.deps.json using Guid(15afaaeb05eb2a8448a747e63a26a329) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd07448c47ff68bf93335cc19c875e322') in 0.004851 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/CodeAssistAssembly.asmdef
+  artifactKey: Guid(b29653951c89da0459a361cc9e6420fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/CodeAssistAssembly.asmdef using Guid(b29653951c89da0459a361cc9e6420fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e73b2a55c7440653e968bfa638bc51db') in 0.006349 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.AsyncIO.dll
+  artifactKey: Guid(d690bebbbf251164897bbfa031a84466) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.AsyncIO.dll using Guid(d690bebbbf251164897bbfa031a84466) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd42b7f1e28d2f32a5328e895804953e4') in 0.005923 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/EditorCoroutines/EditorWaitForSeconds.cs
+  artifactKey: Guid(1017915ae08dabc4e9f8bfdbffedaecb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/EditorCoroutines/EditorWaitForSeconds.cs using Guid(1017915ae08dabc4e9f8bfdbffedaecb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ef69797a8f60dbb6300f972e0b1f6875') in 0.005074 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.Sinks.PersistentFile.dll
+  artifactKey: Guid(83d306a73873d284781ead3bf8246e87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.Sinks.PersistentFile.dll using Guid(83d306a73873d284781ead3bf8246e87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a88bb51b991daaadbf257e08d5e302cf') in 0.006496 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Animations/Intro/IntroLogo.controller
+  artifactKey: Guid(d3b2c4752b7899849b627c6cac0018ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/Intro/IntroLogo.controller using Guid(d3b2c4752b7899849b627c6cac0018ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '106be83a8963293ec48617fbe24db768') in 0.005081 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/Enemies/phantom.png
+  artifactKey: Guid(c9f1c4146f31ebd4b95460d8e785c0bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Enemies/phantom.png using Guid(c9f1c4146f31ebd4b95460d8e785c0bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '26d14d5a86d54b41b6c8619f44f712df') in 0.015741 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/CodeAssist/THIRD-PARTY-NOTICES.TXT
+  artifactKey: Guid(a7b9ae3584a4b6b40b6cda94a45af1e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/THIRD-PARTY-NOTICES.TXT using Guid(a7b9ae3584a4b6b40b6cda94a45af1e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '316d38a9de8ce1c56761135c4f3b75ae') in 0.005796 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/UnityClassExtensions.cs
+  artifactKey: Guid(d0e7662312d49b74182aab3ef816b4ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/UnityClassExtensions.cs using Guid(d0e7662312d49b74182aab3ef816b4ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '34d6c86519bb7940375a1661f5f2362d') in 0.006386 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.YamlDotNet.xml
+  artifactKey: Guid(3d7a29c13fcc40642bbe1d637a1d6534) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.YamlDotNet.xml using Guid(3d7a29c13fcc40642bbe1d637a1d6534) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ecc0e44b342d87e1b430bcb38b3fb5df') in 0.005666 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NetMQ.deps.json
+  artifactKey: Guid(3b62724c1dced6e46ab3fc8750458dfc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NetMQ.deps.json using Guid(3b62724c1dced6e46ab3fc8750458dfc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a4fe3215405d84c5c810b43ff05c8765') in 0.005480 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Logger/UnitySink.cs
+  artifactKey: Guid(eae56aca579a97840a38aab7679bdcfc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Logger/UnitySink.cs using Guid(eae56aca579a97840a38aab7679bdcfc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5c1ffd2fd665695687e5b232ec62417f') in 0.004361 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/EnemyFollow.cs
+  artifactKey: Guid(a822936186a6d90439679d0a7b7827ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scripts/EnemyFollow.cs using Guid(a822936186a6d90439679d0a7b7827ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ae506a315fa65af16f4b86d50531299e') in 0.004192 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Materials/stone_floor_d.png
+  artifactKey: Guid(6450329bf1bc5314d894e25d73e26b89) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Materials/stone_floor_d.png using Guid(6450329bf1bc5314d894e25d73e26b89) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a3c9f083f55a39f59eacf6d9bfafc80a') in 0.016297 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Animations/Ghoul/Walk_Ghoul.anim
+  artifactKey: Guid(a97697b883c71764aadf5b516611cc81) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/Ghoul/Walk_Ghoul.anim using Guid(a97697b883c71764aadf5b516611cc81) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5f0105d6f7cd01676f4239411305fa9f') in 0.006337 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.YamlDotNet.deps.json
+  artifactKey: Guid(5cb8b3b6ebf7f9f479f07b738e297073) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.YamlDotNet.deps.json using Guid(5cb8b3b6ebf7f9f479f07b738e297073) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9346538dd0f6b6b7ef7924fb40854d62') in 0.006214 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.pdb
+  artifactKey: Guid(c4a588769cf0a9a4a982b7a425861026) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.pdb using Guid(c4a588769cf0a9a4a982b7a425861026) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1743e08dadec3bb6d5319cb1747873d7') in 0.005629 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Scripts/Horus.cs
+  artifactKey: Guid(c484711c5e4c54649add0492259836a9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scripts/Horus.cs using Guid(c484711c5e4c54649add0492259836a9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '982e361d1e795e744004155593705cfd') in 0.005092 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Animations/Horus/Horus_Idle_Animation.anim
+  artifactKey: Guid(6475dcecadbb18241ad1023791a6ec4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/Horus/Horus_Idle_Animation.anim using Guid(6475dcecadbb18241ad1023791a6ec4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ebbdf7f225c38cec86e25a53293683e3') in 0.009271 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.YamlDotNet.dll
+  artifactKey: Guid(6a116bfa5fa06df49861e0cbf0f0d90a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.YamlDotNet.dll using Guid(6a116bfa5fa06df49861e0cbf0f0d90a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1b5bee0542300a9f453dc67dea347f0e') in 0.007395 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Input/InputManagerMonitor.cs
+  artifactKey: Guid(98bc9f1e9472e094b920bf0e531b87a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Input/InputManagerMonitor.cs using Guid(98bc9f1e9472e094b920bf0e531b87a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9bf2208dae9d2ff0601a1a7389f6ec1b') in 0.004991 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Preferences/PreferenceEntryHolder.cs
+  artifactKey: Guid(531ac44bdff696940b4d0fa34448fc5b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Preferences/PreferenceEntryHolder.cs using Guid(531ac44bdff696940b4d0fa34448fc5b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bf56126601c7f8ba5e71600e116d77ee') in 0.008219 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Preferences/PreferenceMonitor.cs
+  artifactKey: Guid(b7a01d42dac80564ea115c52dfda4053) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Preferences/PreferenceMonitor.cs using Guid(b7a01d42dac80564ea115c52dfda4053) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5a656fac011d1ab6d84521ca47f05332') in 0.006390 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/GameManager.cs
+  artifactKey: Guid(da77a9167c0b47a44b5c4e09500cfe6f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scripts/GameManager.cs using Guid(da77a9167c0b47a44b5c4e09500cfe6f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd62fbbc4c8477839b4ef429943067e19') in 0.005880 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Assister.cs
+  artifactKey: Guid(ba08aa22a9f2ac44299204bc775631ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Assister.cs using Guid(ba08aa22a9f2ac44299204bc775631ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'efc6a838b06a6a27b15a6eb550c830f1') in 0.007204 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Preferences/RegistryMonitor.cs
+  artifactKey: Guid(e2846c6063ce47c4085f91bea91256b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Preferences/RegistryMonitor.cs using Guid(e2846c6063ce47c4085f91bea91256b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f4f6a64fc329198696adee15ee14cbb6') in 0.005187 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scripts/CameraFollow.cs
+  artifactKey: Guid(d98d303f0ca4fa24188945b4de85988a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scripts/CameraFollow.cs using Guid(d98d303f0ca4fa24188945b4de85988a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '467842e240566dcd6a9d558076971746') in 0.006893 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Materials/stone_floor_d.mat
+  artifactKey: Guid(c9444de5fcf6c034680fa3ef8c067907) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Materials/stone_floor_d.mat using Guid(c9444de5fcf6c034680fa3ef8c067907) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '159e89bbee39be9086b36808b4492ae5') in 0.030996 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Logger/DomainHashEnricher.cs
+  artifactKey: Guid(13ccbe2a17e945f4fbd247bf358d7ad7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Logger/DomainHashEnricher.cs using Guid(13ccbe2a17e945f4fbd247bf358d7ad7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '39dcac614a9511dc09ba25ac695ca12a') in 0.006195 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Animations/Horus/Horus_Stop.anim
+  artifactKey: Guid(eda01f7057a142f49bbd7f2c23f426c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/Horus/Horus_Stop.anim using Guid(eda01f7057a142f49bbd7f2c23f426c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f94d8aea81aa88040a223354005bb03d') in 0.007338 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/Intro.unity
+  artifactKey: Guid(b78d01adfc9576f4ba25f3830bbf7ff6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scenes/Intro.unity using Guid(b78d01adfc9576f4ba25f3830bbf7ff6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f2525da4e7fbbf1e70c91302cd49a161') in 0.004748 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NetMQ.dll
+  artifactKey: Guid(9e0b3d70691fa7c49b64ce4731fae7a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NetMQ.dll using Guid(9e0b3d70691fa7c49b64ce4731fae7a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1732e58ecf8617459b92c36169a26a16') in 0.008695 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Logger/MemorySink.cs
+  artifactKey: Guid(5ab68ddee03c9e94dbddd2f065ba3bc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Logger/MemorySink.cs using Guid(5ab68ddee03c9e94dbddd2f065ba3bc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a950f211a59bd27ab81d9f0ebcc1ae8a') in 0.006905 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/EditorCoroutines/EditorCoroutine.cs
+  artifactKey: Guid(fc80ee9347b13444f9998542fdd67d1a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/EditorCoroutines/EditorCoroutine.cs using Guid(fc80ee9347b13444f9998542fdd67d1a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ee87f41c4ab7cb5e1b3e0da1f3c1ea5b') in 0.005289 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Menu/MenuPause.png
+  artifactKey: Guid(c9d49b6ca47c90642a5d17987a3b25f6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Menu/MenuPause.png using Guid(c9d49b6ca47c90642a5d17987a3b25f6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0c05eb498df337c821a855a12475db3a') in 0.036541 seconds 
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Animations/MenuInicio/Animation_Menu.anim
+  artifactKey: Guid(437b8b4dbf0c5464083202f0a0038c7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/MenuInicio/Animation_Menu.anim using Guid(437b8b4dbf0c5464083202f0a0038c7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '19c6ac3bb4d2d53998a1d301ae0dd690') in 0.008688 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/LazyInitializer.cs
+  artifactKey: Guid(1e59523477f267044ae0f950c698a9ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/LazyInitializer.cs using Guid(1e59523477f267044ae0f950c698a9ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ad705e1a710cb6a95a40bddc46bad270') in 0.005368 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NetMQ.pdb
+  artifactKey: Guid(63634f96ab97a3c4d9eab420e96cd08e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NetMQ.pdb using Guid(63634f96ab97a3c4d9eab420e96cd08e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '003d651a6f60b7e239174997f233c634') in 0.006673 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Animations/Pause/AnimationPause.anim
+  artifactKey: Guid(744dbc4b722f1944281643b68560ac82) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/Pause/AnimationPause.anim using Guid(744dbc4b722f1944281643b68560ac82) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '92c65b0ec94be76004415e37c5889955') in 0.011648 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/EditorCoroutines/EditorWindowCoroutineExtension.cs
+  artifactKey: Guid(4ece29771b9457c49b0f1d05ed06daa7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/EditorCoroutines/EditorWindowCoroutineExtension.cs using Guid(4ece29771b9457c49b0f1d05ed06daa7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b3742e8ae75b94a1ecb735896cb6be99') in 0.010508 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/NetMQPublisher.cs
+  artifactKey: Guid(c01a6168d65843d4db31c7ee8582ebb6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/NetMQPublisher.cs using Guid(c01a6168d65843d4db31c7ee8582ebb6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '77784e62d9880aadc84b9053e257c7ec') in 0.008132 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(25abf746505400540960f84e749064d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scenes/Menu.unity using Guid(25abf746505400540960f84e749064d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f1b220cd8f5b30c624ade43803dc809e') in 0.006504 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Animations/Horus/Idle_Horus.controller
+  artifactKey: Guid(44d6dd3b98c54864ca387cbc346c28dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Animations/Horus/Idle_Horus.controller using Guid(44d6dd3b98c54864ca387cbc346c28dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b5048851d631fd23ffde147c6113346b') in 0.010195 seconds 
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/Horus/idle.png
+  artifactKey: Guid(e8a0d41c7930d63499d7cf47caf6b67d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Horus/idle.png using Guid(e8a0d41c7930d63499d7cf47caf6b67d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '967fa3fcc96f0de213d42657ce2f1d3c') in 0.043116 seconds 
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.Sinks.PersistentFile.pdb
+  artifactKey: Guid(38f544c753765434796a34384fdb677e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.Sinks.PersistentFile.pdb using Guid(38f544c753765434796a34384fdb677e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7f0f756be6e6323219e30b8b831c113b') in 0.010583 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/CodeAssist/CHANGELOG.TXT
+  artifactKey: Guid(31019ac483e743d48b389e42939482fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/CHANGELOG.TXT using Guid(31019ac483e743d48b389e42939482fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'dd3c65a874390233ecaad6b7f464bb5f') in 0.008146 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.AsyncIO.pdb
+  artifactKey: Guid(d08cf186537e3d443bd30d5384f422c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.AsyncIO.pdb using Guid(d08cf186537e3d443bd30d5384f422c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5376ab61d8662452ae67c7c2d4ef6d64') in 0.007493 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefab Enemies/Ghoul.prefab
+  artifactKey: Guid(5b889ec2f64bed542991567d4660ea71) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefab Enemies/Ghoul.prefab using Guid(5b889ec2f64bed542991567d4660ea71) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c6067a206af807d27a6f9df7fb5d18d1') in 0.040834 seconds 
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NaCl.xml
+  artifactKey: Guid(2f722cece4491504795276be12504c6e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NaCl.xml using Guid(2f722cece4491504795276be12504c6e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1af54e1f6efb6a955c49e8bb2d48c452') in 0.006082 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Monitor.cs
+  artifactKey: Guid(59ceb245bf6ab6e47bb52fd87859ac48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Monitor.cs using Guid(59ceb245bf6ab6e47bb52fd87859ac48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0c03976d841c1becc5adf7c984978365') in 0.008064 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/Input/UnityInputManager.cs
+  artifactKey: Guid(9886d7551e8ac20429cfb5cc05b0b162) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/Input/UnityInputManager.cs using Guid(9886d7551e8ac20429cfb5cc05b0b162) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a0bdca903dadf98af420dfa918a02135') in 0.008392 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.dll
+  artifactKey: Guid(00e434217d629384a9e62ba179d3aab7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Serilog.dll using Guid(00e434217d629384a9e62ba179d3aab7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6c545e74f9e2f5ab79623d88cf615e03') in 0.007291 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NetMQ.xml
+  artifactKey: Guid(44a44578cc1867b4ab88947111171b15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Meryel.UnityCodeAssist.NetMQ.xml using Guid(44a44578cc1867b4ab88947111171b15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '65ab738400b6b07598749381a4493092') in 0.007920 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/CodeAssist/README.TXT
+  artifactKey: Guid(12b81382379893048b02858b06453344) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Plugins/CodeAssist/README.TXT using Guid(12b81382379893048b02858b06453344) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3f9cc92733b5875c8f743ed7fc5f1eb3') in 0.007966 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scripts/ControlIntro.cs
+  artifactKey: Guid(e91dd2a56aff1704c911d552e6c85e47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scripts/ControlIntro.cs using Guid(e91dd2a56aff1704c911d552e6c85e47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '390df3364b394eb4b2a97a4af1e93bed') in 0.007302 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012528 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.580 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1581ms)
+		BeginReloadAssembly (166ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1300ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (308ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (793ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (640ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3154 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 64 unused Assets / (22.9 KB). Loaded Objects now: 3654.
+Memory consumption went from 114.6 MB to 114.5 MB.
+Total: 3.915900 ms (FindLiveObjects: 0.268300 ms CreateObjectMapping: 0.238900 ms MarkObjects: 3.370300 ms  DeleteObjects: 0.037500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
