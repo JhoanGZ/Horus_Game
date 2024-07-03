@@ -1,11 +1,13 @@
+using System.Collections;
 using UnityEngine;
 
 public class Horus : MonoBehaviour
 {
     // Velocidad de movimiento
-    public float speed = 5.0f;
+    public float speed = 4.0f;
     private Animator animator;
     private float TimeWalking;
+    public float dashDuration = 1.5f;
 
     void Start()
     {
@@ -52,7 +54,20 @@ public class Horus : MonoBehaviour
         }
 
         animator.SetFloat("TimeWalking", TimeWalking);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(Dash());
+        }
+}
+
+    IEnumerator Dash() //Add Cooldown ****
+    {
+        animator.SetBool("IsDashing", true);
+        speed = 7f;
+        yield return new WaitForSeconds(dashDuration);
+        animator.SetBool("IsDashing", false);
+        speed = 4f;
     }
 
-    
 }

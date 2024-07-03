@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\ControlIntro.cs" />
     <Compile Include="Assets\Scripts\SpawnerGhoul.cs" />
+    <Compile Include="Assets\Scripts\SceneTransition.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

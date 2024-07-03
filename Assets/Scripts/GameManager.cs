@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public int cantMadness;
     public SpawnerGhoul spawn;
     public bool onPause = false; //Verification pause
+    public SceneTransition sceneTransition;
     [Header("Comandos menu pausa")]
     public GameObject panelPause; //For script GameManager
 
@@ -41,9 +42,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+
+
     public void play() //Function for start game
     {
+       
         SceneManager.LoadScene(2);
+        AudioListener.pause = false;
     }
 
     public void Continue() //Function to resume game
@@ -62,9 +68,15 @@ public class GameManager : MonoBehaviour
         AudioListener.pause = true;
     }
 
-    public void Exit() //Function to exit and return the Menu
+    public void ReturnMenu() //Function to exit and return the Menu
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(1); //Load scene menu
+        SceneManager.LoadScene(1);
+        AudioListener.pause = false;//Load scene menu
+    }
+
+    public void CloseGame()
+    {
+        Application.Quit();
     }
 }
