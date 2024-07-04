@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public int cantMadness;
     public SpawnerGhoul spawn;
     public bool onPause = false; //Verification pause
-    public SceneTransition sceneTransition;
     [Header("Comandos menu pausa")]
     public GameObject panelPause; //For script GameManager
 

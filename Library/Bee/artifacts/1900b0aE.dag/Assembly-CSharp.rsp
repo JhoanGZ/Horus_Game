@@ -320,8 +320,6 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
@@ -346,13 +344,13 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/CameraFollow.cs"
-"Assets/Scripts/ControlIntro.cs"
-"Assets/Scripts/EnemyFollow.cs"
+"Assets/Scripts/Camera/CameraFollow.cs"
+"Assets/Scripts/Enemies/Ghoul/EnemyFollow.cs"
 "Assets/Scripts/GameManager.cs"
-"Assets/Scripts/Horus.cs"
-"Assets/Scripts/SceneTransition.cs"
-"Assets/Scripts/SpawnerGhoul.cs"
+"Assets/Scripts/Horus/Horus.cs"
+"Assets/Scripts/Intro/ControlIntro.cs"
+"Assets/Scripts/Intro/SoundIntro.cs"
+"Assets/Scripts/Spawns/SpawnerGhoul.cs"
 -langversion:9.0
 /deterministic
 /optimize+
