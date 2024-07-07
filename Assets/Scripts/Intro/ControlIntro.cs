@@ -17,13 +17,13 @@ public class ControlIntro : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) //For Skip scene
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("Trailer");
         }
     }
 
     IEnumerator IntroChums() 
     {
         yield return new WaitForSeconds(duration); //Coroutine that will wait for a specified number of seconds and then change the scene
-        SceneManager.LoadScene(scene); //Scene id for load
+        SceneManager.LoadScene("Trailer"); //Scene id for load
     }
 }

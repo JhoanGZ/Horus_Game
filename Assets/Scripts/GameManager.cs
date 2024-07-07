@@ -14,23 +14,31 @@ public class GameManager : MonoBehaviour
     [Header("Comandos menu pausa")]
     public GameObject panelPause; //For script GameManager
 
-    public void Awake() //set hide panelPause on Awake
+    public void Start() //set hide panelPause on Awake
     {
-        panelPause.SetActive(false);   
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            panelPause.SetActive(false);
+        };   
     }
 
     public void Update() //Keycode for Pause and functions
     {
-        if (Input.GetKeyDown(KeyCode.Escape)){
-            if (onPause)
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                Continue();
-            }
-            else
-            {
-                Pause();
+                if (onPause)
+                {
+                    Continue();
+                }
+                else
+                {
+                    Pause();
+                }
             }
         }
+            
 
         if (Input.GetKeyDown(KeyCode.M))
         {

@@ -58,13 +58,19 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\EnemyFollow.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Ghoul\EnemyFollow.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Horus.cs" />
-    <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\ControlIntro.cs" />
-    <Compile Include="Assets\Scripts\SpawnerGhoul.cs" />
-    <Compile Include="Assets\Scripts\SceneTransition.cs" />
+    <Compile Include="Assets\Scripts\Intro\SoundIntro.cs" />
+    <Compile Include="Assets\Scripts\Horus\Horus.cs" />
+    <Compile Include="Assets\Scripts\Horus\HorusLife.cs" />
+    <Compile Include="Assets\Scripts\Horus\SpriteShadow.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Horus\LifeUI.cs" />
+    <Compile Include="Assets\Scripts\Intro\ControlIntro.cs" />
+    <Compile Include="Assets\Scripts\Spawns\SpawnerGhoul.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\Horus\HorusShadow.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

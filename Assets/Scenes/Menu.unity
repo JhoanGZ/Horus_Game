@@ -1022,7 +1022,6 @@ MonoBehaviour:
   cantMadness: 0
   spawn: {fileID: 0}
   onPause: 0
-  sceneTransition: {fileID: 0}
   panelPause: {fileID: 0}
 --- !u!82 &1993306505
 AudioSource:
@@ -1036,7 +1035,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 728daf15a2a41994eb9b0e98b1b9b44b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.145
+  m_Volume: 0.506
   m_Pitch: 1
   Loop: 0
   Mute: 0

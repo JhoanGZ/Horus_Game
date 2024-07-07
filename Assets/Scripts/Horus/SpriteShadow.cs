@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,4 +12,8 @@ public class Sprite : MonoBehaviour
         GetComponent<SpriteRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
     }
 
+    public static implicit operator UnityEngine.Sprite(Sprite v)
+    {
+        throw new NotImplementedException();
+    }
 }

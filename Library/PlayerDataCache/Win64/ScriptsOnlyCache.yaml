@@ -3,9 +3,13 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraFollow
     - ControlIntro
+    - ControlTrailer
     - EnemyFollow
     - GameManager
     - Horus
+    - HorusLife
+    - LifeUI
+    - SoundIntro
     - SpawnerGhoul
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -25,13 +29,17 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   serializedClasses:
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    - UnityEngine.Events.UnityEvent`1[System.Int32]
+    - UnityEngine.RectOffset
     UnityEngine.UI:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
@@ -71,6 +79,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -82,7 +94,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 20550}
+      Script: {instanceID: 1938}
+    - Class: 114
+      Script: {instanceID: 4934}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -112,9 +126,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
+    - Class: 54
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
@@ -137,32 +149,40 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16082}
+      Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 16110}
+      Script: {instanceID: 1554}
     - Class: 114
-      Script: {instanceID: 16412}
+      Script: {instanceID: 1884}
     - Class: 114
-      Script: {instanceID: 16904}
+      Script: {instanceID: 2378}
     - Class: 114
-      Script: {instanceID: 17132}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 17334}
+      Script: {instanceID: 2624}
     - Class: 114
-      Script: {instanceID: 17626}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 18736}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 19814}
+      Script: {instanceID: 4214}
     - Class: 114
-      Script: {instanceID: 20118}
+      Script: {instanceID: 4516}
     - Class: 114
-      Script: {instanceID: 20600}
+      Script: {instanceID: 4734}
     - Class: 114
-      Script: {instanceID: 21646}
+      Script: {instanceID: 5296}
+    - Class: 114
+      Script: {instanceID: 5600}
+    - Class: 114
+      Script: {instanceID: 6080}
+    - Class: 114
+      Script: {instanceID: 7126}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -210,21 +230,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16110}
+      Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 16412}
+      Script: {instanceID: 1884}
     - Class: 114
-      Script: {instanceID: 17132}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 17334}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 17626}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 19814}
+      Script: {instanceID: 5296}
     - Class: 114
-      Script: {instanceID: 20118}
+      Script: {instanceID: 5600}
     - Class: 114
-      Script: {instanceID: 20600}
+      Script: {instanceID: 6080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -243,7 +263,64 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/Trailer.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1846}
+    - Class: 114
+      Script: {instanceID: 2304}
+    - Class: 114
+      Script: {instanceID: 2606}
+    - Class: 114
+      Script: {instanceID: 2812}
+    - Class: 114
+      Script: {instanceID: 5600}
+    - Class: 114
+      Script: {instanceID: 6080}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
+      Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: a9d9d285d996b592f1ccf674fa017099
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: c1058004017c4d95e55a1c77d955e000
@@ -256,12 +333,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyFollow
-  - hash:
-      serializedVersion: 2
-      Hash: a9d9d285d996b592f1ccf674fa017099
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: 719a1390f9eb856966a1aaab72041631
@@ -306,10 +377,22 @@ ScriptsOnlyBuild:
     className: UnityOnMouseExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: adf4d8e2d1b69edea07dfcb3ea64ed2a
+      Hash: eccbd8a7b3297950b9310534fbc4fcb3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControlTrailer
+  - hash:
+      serializedVersion: 2
+      Hash: d4709b0b0a3ca002d9c62ae9b19ad38a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: daa94144a6da8252101798439a14da76
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundIntro
   - hash:
       serializedVersion: 2
       Hash: 4763159aa2d72ed796c2398564a4d18d
@@ -384,16 +467,22 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: a152f4bbfcc1c203222264e9469e6cd6
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: TimelineAsset
+      Hash: e777fd56e33b08715421bc811de50d96
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HorusLife
   - hash:
       serializedVersion: 2
       Hash: 201b3e41302e8bd8463c6af1573b2adb
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionEnterMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a152f4bbfcc1c203222264e9469e6cd6
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: TimelineAsset
   - hash:
       serializedVersion: 2
       Hash: 6554088abf80322f19a20856543c0003
@@ -666,6 +755,12 @@ ScriptsOnlyBuild:
     className: UnityOnCancelMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 730242ccdd95ba8f3b304829a5124835
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LifeUI
+  - hash:
+      serializedVersion: 2
       Hash: 6d1ca98bad1cb30a274f79776b279843
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -724,6 +819,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: 88155a8853164429d2a18eda60e7e67c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControlIntro
   - hash:
       serializedVersion: 2
       Hash: 9efc8c65b86b5c1022ed3efd7ac004a8
@@ -820,12 +921,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 88155a8853164429d2a18eda60e7e67c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ControlIntro
   - hash:
       serializedVersion: 2
       Hash: 9690f760294698c29b1bee7d9b7bd452
@@ -1050,12 +1145,6 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 2142320515c2dbec41552527444a961d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SceneTransition
-  - hash:
-      serializedVersion: 2
       Hash: c5495cef5472c394a7d823d1315ba01d
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1065,4 +1154,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Intro.unity
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Juego.unity
+  - Assets/Scenes/Trailer.unity
   playerPath: C:/Horus-Dungaen/build/Horus.exe

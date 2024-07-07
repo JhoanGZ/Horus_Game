@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Horus-Dungaen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E35177D-F89B-F0D9-6EB4-414AF871E254}|Assembly-CSharp.csproj|c:\\horus-dungaen\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E35177D-F89B-F0D9-6EB4-414AF871E254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E35177D-F89B-F0D9-6EB4-414AF871E254}|Assembly-CSharp.csproj|C:\\Horus-Dungaen\\assets\\scripts\\scenetransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E35177D-F89B-F0D9-6EB4-414AF871E254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenetransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E35177D-F89B-F0D9-6EB4-414AF871E254}|Assembly-CSharp.csproj|C:\\Horus-Dungaen\\assets\\scripts\\enemies\\ghoul\\enemyfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E35177D-F89B-F0D9-6EB4-414AF871E254}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\ghoul\\enemyfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,27 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SceneTransition.cs",
-              "DocumentMoniker": "C:\\Horus-Dungaen\\Assets\\Scripts\\SceneTransition.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneTransition.cs",
-              "ToolTip": "C:\\Horus-Dungaen\\Assets\\Scripts\\SceneTransition.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SceneTransition.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T02:50:18.256Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Horus-Dungaen\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Horus-Dungaen\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAowE4AAAAFAAAA",
+              "Title": "EnemyFollow.cs",
+              "DocumentMoniker": "C:\\Horus-Dungaen\\Assets\\Scripts\\Enemies\\Ghoul\\EnemyFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Ghoul\\EnemyFollow.cs",
+              "ToolTip": "C:\\Horus-Dungaen\\Assets\\Scripts\\Enemies\\Ghoul\\EnemyFollow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Ghoul\\EnemyFollow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T03:20:32.566Z",
+              "WhenOpened": "2024-07-05T02:58:32.979Z",
               "EditorCaption": ""
             }
           ]
