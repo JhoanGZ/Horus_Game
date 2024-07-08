@@ -272,7 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 507638873}
   introClip: {fileID: 32900000, guid: e9ec0722e5c1d2f4a8d349753a4bce6c, type: 3}
-  mainClip: {fileID: 32900000, guid: 934143ee70a97464a871712c819bc02b, type: 3}
+  mainClip: {fileID: 32900000, guid: cebd69db6d0847b46aaf19f14861921d, type: 3}
   nextSceneName: Menu
 --- !u!1 &1066917263
 GameObject:

@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemies\Ghoul\EnemyFollow.cs" />
+    <Compile Include="Assets\Scripts\Intro\ControlTrailer.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Intro\SoundIntro.cs" />
     <Compile Include="Assets\Scripts\Horus\Horus.cs" />
