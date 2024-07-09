@@ -12,7 +12,7 @@ public class LifeUI : MonoBehaviour
     public HorusLife horusLife;
     public int currentIndex;
 
-    public static object Instance { get; internal set; }
+    
 
     private void Awake()
     {

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Horus : MonoBehaviour
 {
@@ -7,13 +8,20 @@ public class Horus : MonoBehaviour
     public float speed = 4.0f;
     private Animator animator;
     private float TimeWalking;
-    public float dashDuration = 1.5f;
+    public float dashDuration = 2f;
+    private HorusLife horusLife;
+    private bool isInvulnerable = false; //Verification for invulnerability
+    public GameObject cooldownBar;
+
 
     void Start()
     {
         // Inicializar el componente Animator
         animator = GetComponent<Animator>();
         TimeWalking = 0f; //Controlador para cambio de animacion caminar
+        horusLife = GetComponent<HorusLife>();
+        cooldownBar.gameObject.SetActive(false);
+
     }
 
     // Update se llama una vez por frame
@@ -61,13 +69,27 @@ public class Horus : MonoBehaviour
         }
 }
 
-    IEnumerator Dash() //Add Cooldown ****
+    IEnumerator Dash() 
     {
         animator.SetBool("IsDashing", true);
         speed = 7f;
+        SetInvulnerable(true);//set invulnerability
+        cooldownBar.gameObject.SetActive(true);
         yield return new WaitForSeconds(dashDuration);
+        SetInvulnerable(false);//Disable invulnerability
         animator.SetBool("IsDashing", false);
         speed = 4f;
+        cooldownBar.gameObject.SetActive(false);
+
     }
 
+    public bool IsInvulnerable()
+    {
+        return isInvulnerable;
+    }
+
+    public void SetInvulnerable(bool state)
+    {
+        isInvulnerable = state;
+    }
 }
