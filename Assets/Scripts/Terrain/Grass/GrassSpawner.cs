@@ -68,10 +68,10 @@ public class GrassSpawner : MonoBehaviour
                 attempts++;
             }
 
-            if (!positionFound)
-            {
-                UnityEngine.Debug.LogWarning("Could not find a suitable position to spawn initial grass after " + maxSpawnAttempts + " attempts.");
-            }
+            //if (!positionFound)
+            //{
+            //    UnityEngine.Debug.LogWarning("Could not find a suitable position to spawn initial grass after " + maxSpawnAttempts + " attempts.");
+            //}
         }
     }
 
@@ -132,10 +132,10 @@ public class GrassSpawner : MonoBehaviour
                 attempts++;
             }
 
-            if (!positionFound)
-            {
-                UnityEngine.Debug.LogWarning("Could not find a suitable position to spawn grass after " + maxSpawnAttempts + " attempts.");
-            }
+            //if (!positionFound)
+            //{
+            //    UnityEngine.Debug.LogWarning("Could not find a suitable position to spawn grass after " + maxSpawnAttempts + " attempts.");
+            //}
         }
     }
 }
