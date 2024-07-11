@@ -73,6 +73,8 @@ public class Tree02Spawner : MonoBehaviour
                     {
                         rb.isKinematic = true;
                     }
+
+                 
                 }
                 attempts++;
             }
