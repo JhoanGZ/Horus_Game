@@ -1,9 +1,15 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Horus : MonoBehaviour
 {
+    // AutoAtaque básico
+    public BasicAttack basicAttack;
+
+    // Intervalo de ataque modificable desde el inspector
+    public float attackInterval = 1.0f; 
     // Velocidad de movimiento
     public float speed = 4.0f;
     private Animator animator;
@@ -22,6 +28,15 @@ public class Horus : MonoBehaviour
         horusLife = GetComponent<HorusLife>();
         cooldownBar.gameObject.SetActive(false);
 
+        // Asegúrate de que basicAttack esté inicializado
+        if (basicAttack == null)
+        {
+            //Debug.LogError("BasicAttack no está asignado en " + gameObject.name);
+        }
+        else
+        {
+            StartCoroutine(AutoAttack()); // Inicializa el auto-ataque básico
+        }
     }
 
     // Update se llama una vez por frame
@@ -34,7 +49,7 @@ public class Horus : MonoBehaviour
         // Crea un vector de movimiento basado en la entrada del usuario
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-        // Mueve el objeto seg�n el vector de movimiento y la velocidad
+        // Mueve el objeto seg�n el vector de movimiento y la velocidad
         transform.Translate(movement * speed * Time.deltaTime, Space.World);
 
         // Controla el sprite izquierda o derecha
@@ -47,7 +62,7 @@ public class Horus : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1); // Mirar a la derecha
         }
 
-        // Detecci�n de movimiento
+        // Detecci�n de movimiento
         bool isWalking = movement.magnitude > 0;
 
         if (isWalking)
@@ -81,6 +96,22 @@ public class Horus : MonoBehaviour
         speed = 4f;
         cooldownBar.gameObject.SetActive(false);
 
+    }
+
+    IEnumerator AutoAttack()
+    {
+        while (true)
+        {
+            if (basicAttack != null)
+            {
+                basicAttack.PerformAttack();
+            }
+            else
+            {
+                //Debug.LogError("BasicAttack no está asignado en " + gameObject.name);
+            }
+            yield return new WaitForSeconds(attackInterval); // Espera 1 segundo antes del siguiente ataque
+        }
     }
 
     public bool IsInvulnerable()
