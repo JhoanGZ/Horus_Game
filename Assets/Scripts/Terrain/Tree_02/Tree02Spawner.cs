@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
-public class TreeSpawner : MonoBehaviour
+public class Tree02Spawner : MonoBehaviour
 {
-    public GameObject treePrefab;
+    public GameObject tree2Prefab;
     public Transform player;
     public float spawnDistance = 5.0f;
     public int minTreesPerSpawn = 2;
@@ -68,7 +67,7 @@ public class TreeSpawner : MonoBehaviour
                     spawnedPositions.Add(spawnPosition);
 
                     // Instantiate the tree and set its Rigidbody to be kinematic
-                    GameObject tree = Instantiate(treePrefab, spawnPosition, Quaternion.identity);
+                    GameObject tree = Instantiate(tree2Prefab, spawnPosition, Quaternion.identity);
                     Rigidbody rb = tree.GetComponent<Rigidbody>();
                     if (rb != null)
                     {
