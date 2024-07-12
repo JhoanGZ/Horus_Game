@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5958824024040736512}
   - component: {fileID: 6183272150131024035}
   - component: {fileID: 5097776612797070956}
-  - component: {fileID: 5917970663477104838}
   - component: {fileID: 8735404310525654916}
   m_Layer: 0
   m_Name: Ghoul
@@ -33,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1513623606158227772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.409, y: 0.3, z: 0}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 4}
+  m_LocalScale: {x: 2, y: 2, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -152,7 +151,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.1
+  m_Radius: 0.13
   m_Height: 1.28
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -168,20 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4c647f51b6d424993dfa808c679a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5917970663477104838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513623606158227772}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01d343bb1b3c5aa4f9dfd9346cbc7623, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ghoulMaxLife: 2
-  ghoulCurrentLife: 2
 --- !u!114 &8735404310525654916
 MonoBehaviour:
   m_ObjectHideFlags: 0

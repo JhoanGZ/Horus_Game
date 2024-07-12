@@ -612,8 +612,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basicAttack: {fileID: 754315785}
-  attackInterval: 1
-  speed: 4
+  attackInterval: 0.5
+  speed: 6
   dashDuration: 1
   cooldownBar: {fileID: 690116032}
 --- !u!114 &341343054
@@ -1945,7 +1945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossPrefab: {fileID: 4081651850917605402, guid: fd2963d8477f81844954d656f730cef0, type: 3}
   player: {fileID: 341343047}
-  spawnRadius: 20
+  spawnRadius: 10
   spawnAnimation: {fileID: 7400000, guid: 21978114487cf88409b75f1b6718e09b, type: 2}
 --- !u!1 &1265314712
 GameObject:
