@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 837654192772813102}
   - component: {fileID: 8162586944271660978}
   - component: {fileID: 2897770506607140489}
+  - component: {fileID: -167474521855338570}
   m_Layer: 0
   m_Name: Slyan
   m_TagString: Enemy
@@ -322,3 +323,15 @@ MonoBehaviour:
   damageImage: {fileID: 0}
   flashSpeed: 5
   flashColor: {r: 1, g: 0, b: 0, a: 0.5}
+--- !u!114 &-167474521855338570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4081651850917605402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451a7d0e397cf8b4f8e1eef5731191d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
