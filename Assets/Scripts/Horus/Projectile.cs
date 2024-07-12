@@ -45,6 +45,9 @@ public class Projectile : MonoBehaviour
 
             // Move the projectile towards the enemy
             transform.position += direction * finalSpeed * Time.deltaTime;
+        } else
+        {
+            Destroy(gameObject);
         }
     }
 
