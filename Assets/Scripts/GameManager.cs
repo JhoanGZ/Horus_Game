@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
         {
             // On Target reach start some function to call Boss
         }
+        
     }
 
     public void UpdateUI() //Update UI for Kill ghouls

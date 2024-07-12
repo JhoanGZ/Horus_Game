@@ -82,6 +82,7 @@ public class Projectile : MonoBehaviour
             if (!kill)
             {
                 killCount += 1;
+                GameManager.instance.IncrementGhoulCount(); //Add count for canvas
                 Debug.Log("Skill kill count = " + killCount);
                 skillExperience += skillExperiencePerKill;
                 if (skillExperience >= skillExperienceRequired)
