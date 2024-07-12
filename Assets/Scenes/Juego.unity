@@ -381,7 +381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cantMadness: 20
   spawn: {fileID: 1442718761}
-  spawnSlain: {fileID: 0}
+  spawnSlain: {fileID: 1219973179}
   onPause: 0
   panelPause: {fileID: 1265314712}
   panelUI: {fileID: 1121342860}
@@ -1945,7 +1945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossPrefab: {fileID: 4081651850917605402, guid: fd2963d8477f81844954d656f730cef0, type: 3}
   player: {fileID: 341343047}
-  spawnRadius: 20
+  spawnRadius: 15
   spawnAnimation: {fileID: 7400000, guid: 21978114487cf88409b75f1b6718e09b, type: 2}
 --- !u!1 &1265314712
 GameObject:
