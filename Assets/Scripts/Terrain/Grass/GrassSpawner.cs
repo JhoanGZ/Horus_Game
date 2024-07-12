@@ -13,7 +13,7 @@ public class GrassSpawner : MonoBehaviour
     public float minGrassDistance = 3.0f;
     public float fixedYPosition = 0.15f;
     public float spawnInterval = 2.0f;
-    public float initialSpawnRadius = 10.0f; // Radio inicial para spawn de césped
+    public float initialSpawnRadius = 10.0f; // Initial Radius to spawn grass around the player
 
     private List<Vector3> spawnedPositions = new List<Vector3>();
     private Vector3 lastSpawnPosition;
@@ -27,7 +27,7 @@ public class GrassSpawner : MonoBehaviour
 
     void InitialSpawnGrass()
     {
-        // Generar césped alrededor del jugador en un radio inicial
+        // Generate a random number of grass to spawn initially
         int initialGrassToSpawn = UnityEngine.Random.Range(minGrassPerSpawn, maxGrassPerSpawn + 1);
         for (int i = 0; i < initialGrassToSpawn; i++)
         {

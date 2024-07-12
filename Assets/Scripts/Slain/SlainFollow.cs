@@ -14,6 +14,7 @@ public class SlainFollow : MonoBehaviour
     private float minDistance = 5f;
     private float maxDistance = 9f;
     private float iPos = 0.5f;
+    public AudioClip secondPhaseAudio;
 
     void Start()
     {
@@ -55,6 +56,11 @@ public class SlainFollow : MonoBehaviour
             {
 
                 // Comportamiento 2da Fase
+                if (!GetComponent<AudioSource>().isPlaying && secondPhaseAudio != null)
+                {
+                    GetComponent<AudioSource>().clip = secondPhaseAudio;
+                    GetComponent<AudioSource>().Play();
+                }
                 secondPhase = true;
                 float angle = Time.time * orbitSpeed; // speed around
                 float distance = Mathf.Lerp(minDistance, maxDistance, Mathf.PingPong(angle, 1f));
