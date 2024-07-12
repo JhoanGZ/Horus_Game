@@ -1,15 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using static UnityEditor.PlayerSettings;
 
 public class SlainFollow : MonoBehaviour
 {
     public Transform horus;
-    public float moveSpeed = 3f; // Speed walk
+    public float moveSpeed = 2.5f; // Speed walk
     public float orbitSpeed = 1f; // Speed around
     public Animator animator;
     private bool shouldFollowPlayer = true;
-    private float minDistance = 3f;
-    private float maxDistance = 3.5f;
+    public static bool secondPhase = false;
+    private float minDistance = 5f;
+    private float maxDistance = 9f;
     private float iPos = 0.5f;
 
     void Start()
@@ -34,8 +37,6 @@ public class SlainFollow : MonoBehaviour
                 Vector3 direction = horus.position - transform.position;
                 direction.y = 0f; // block y
                 direction.Normalize();
-               
-
                 // Follow player
                 Vector3 newPosition = transform.position + direction * moveSpeed * Time.deltaTime;
                 transform.position = new Vector3(newPosition.x, iPos, newPosition.z); // Set Y = 0.48
@@ -52,7 +53,9 @@ public class SlainFollow : MonoBehaviour
             }
             else
             {
+
                 // Comportamiento 2da Fase
+                secondPhase = true;
                 float angle = Time.time * orbitSpeed; // speed around
                 float distance = Mathf.Lerp(minDistance, maxDistance, Mathf.PingPong(angle, 1f));
                 Vector3 circlePosition = horus.position + new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle)) * distance;

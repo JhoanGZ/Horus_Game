@@ -72,10 +72,14 @@ public class GameManager : MonoBehaviour
         deadGhoulCount--;
         UpdateUI();
 
-        if (deadGhoulCount == 0)
+        if (deadGhoulCount <= 0)
         {
-            Debug.Log("Spawning Boss");
-            spawnSlain.SpawnBoss();
+            
+            if (deadGhoulCount == 0)
+            {
+                Debug.Log("Spawning Boss");
+                spawnSlain.SpawnBoss();
+            }
 
         }
         else

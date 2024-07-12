@@ -15,9 +15,13 @@ GameObject:
   - component: {fileID: 8793850359769424922}
   - component: {fileID: 5023475058878830296}
   - component: {fileID: 901476315383557235}
+  - component: {fileID: 3846629281620885221}
+  - component: {fileID: 837654192772813102}
+  - component: {fileID: 8162586944271660978}
+  - component: {fileID: 2897770506607140489}
   m_Layer: 0
   m_Name: Slyan
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,7 +138,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4081651850917605402}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -252,3 +256,68 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3846629281620885221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4081651850917605402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a013dd82c2c7f7e48959a4c712622769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 4085150349901917304, guid: b239afedbf8ac7243a4116984582d75a, type: 3}
+  attackCooldown: 3
+--- !u!114 &837654192772813102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4081651850917605402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a643cbf692cad8e468cbbd7f82909324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tackleCooldown: 5
+--- !u!114 &8162586944271660978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4081651850917605402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ff9cbb221ab3244bd37962d328ff7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tackleSpeed: 10
+  tackleDuration: 0.5
+  maxPivots: 3
+  pivotAngle: 45
+  pivotDuration: 0.2
+--- !u!114 &2897770506607140489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4081651850917605402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30444600372a6a46b2704175a8ecc92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 20
+  maxHealth: 20
+  setHealth:
+    m_PersistentCalls:
+      m_Calls: []
+  invulnerabilityDuration: 2
+  damageImage: {fileID: 0}
+  flashSpeed: 5
+  flashColor: {r: 1, g: 0, b: 0, a: 0.5}
