@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class SlyanLife : MonoBehaviour
@@ -11,74 +9,111 @@ public class SlyanLife : MonoBehaviour
     public int maxHealth;
     public UnityEvent<int> setHealth;
     public float invulnerabilityDuration = 1.5f;
-    public Image damageImage; // Referencia a la Image en el Canvas
-    public float flashSpeed = 5f; // Velocidad a la que se desvanece el color
-    public Color flashColor = new Color(1f, 0f, 0f, 0.5f); // Color del flash (rojo con transparencia)
-    private bool damaged = false;
-
     private bool live = true;
+    private SpriteRenderer spriteRenderer;
+    public float blinkDuration = 1.0f;
+    public float blinkInterval = 0.1f;
+    private bool isInvulnerable = false;
+
+    private SlainFollow slyanFollow;
 
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = maxHealth > 0 ? maxHealth : 10;
         setHealth.Invoke(currentHealth);
-    }
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
-    private void Update()
-    {
-        if (damaged)
+        // Obtener la referencia al componente SlainFollow
+        slyanFollow = GetComponent<SlainFollow>();
+        if (slyanFollow == null)
         {
-            // Flash the damageImage
-            damageImage.color = flashColor;
+            Debug.LogError("SlainFollow component not found on the GameObject.");
         }
-        else
-        {
-            // Fade out the damageImage
-            damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
-        }
-
-        damaged = false;
     }
 
     public bool Damaged(int damageAmount)
     {
-        damaged = true;
+        if (isInvulnerable) return live;
 
-        int tempHealth = currentHealth - damageAmount;
-        currentHealth = Mathf.Max(tempHealth, 0);
-        
+        currentHealth = Mathf.Max(currentHealth - damageAmount, 0);
         setHealth.Invoke(currentHealth);
+        StartCoroutine(BlinkCoroutine());
+        Debug.Log("HP SLYAN:: " + currentHealth);
+
+        if (currentHealth <= maxHealth / 2)
+        {
+            PhaseChange();
+        }
 
         if (currentHealth <= 0)
         {
-            Dead();
+            StartCoroutine(Dead());
             live = false;
             return live;
         }
-        else
+
+        StartCoroutine(InvulnerabilityCoroutine());
+        live = true;
+        return live;
+    }
+
+    private IEnumerator BlinkCoroutine()
+    {
+        float elapsedTime = 0f;
+        bool toggleColor = false;
+
+        while (elapsedTime < blinkDuration)
         {
-            StartCoroutine(InvulnerabilityCoroutine());
-            live = true;
-            return live;
+            spriteRenderer.color = toggleColor ? Color.white : Color.red;
+            toggleColor = !toggleColor;
+            elapsedTime += blinkInterval;
+            yield return new WaitForSeconds(blinkInterval);
         }
+
+        spriteRenderer.color = Color.white;
     }
 
     public void SlyanHeal(int healAmount)
     {
-        int tempHealth = currentHealth + healAmount;
-        currentHealth = Mathf.Min(tempHealth, maxHealth);
-        
+        currentHealth = Mathf.Min(currentHealth + healAmount, maxHealth);
         setHealth.Invoke(currentHealth);
     }
 
     private IEnumerator InvulnerabilityCoroutine()
     {
-        // Aquí puedes agregar lógica específica para Slyan si es necesario
+        isInvulnerable = true;
         yield return new WaitForSeconds(invulnerabilityDuration);
+        isInvulnerable = false;
     }
 
-    private void Dead()
+    private IEnumerator Dead()
     {
+        // Opcional: Agregar lógica de animación de muerte aquí
+        Destroy(gameObject);
+        yield return new WaitForSeconds(1f);
+
+        // Destruir todos los objetos con el tag "Slyan"
+        GameObject[] slyans = GameObject.FindGameObjectsWithTag("Slyan");
+        foreach (GameObject slyan in slyans)
+        {
+            Destroy(slyan);
+        }
+
         SceneManager.LoadScene("End");
+    }
+
+    private void PhaseChange()
+    {
+        if (slyanFollow != null)
+        {
+            slyanFollow.shouldFollowPlayer = false;
+            slyanFollow.iPos = 1f;
+            slyanFollow.animator.SetTrigger("ChangeAnimation");
+            slyanFollow.secondPhase = true;
+        }
+        else
+        {
+            Debug.LogError("slyanFollow reference is null.");
+        }
     }
 }

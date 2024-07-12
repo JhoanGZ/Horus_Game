@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: -167474521855338570}
   m_Layer: 0
   m_Name: Slyan
-  m_TagString: Enemy
+  m_TagString: Slyan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horus: {fileID: 0}
-  moveSpeed: 3
+  moveSpeed: 2.5
   orbitSpeed: 1
   animator: {fileID: 0}
   secondPhaseAudio: {fileID: 8300000, guid: 48a0277b0f53bee42bd603e988039318, type: 3}
@@ -140,7 +140,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4081651850917605402}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -158,8 +158,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.15
-  m_Height: 1.2
+  m_Radius: 0.6
+  m_Height: 1.6
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &901476315383557235
@@ -300,8 +300,11 @@ MonoBehaviour:
   tackleSpeed: 10
   tackleDuration: 0.5
   maxPivots: 3
-  pivotAngle: 45
+  pivotDistance: 1
   pivotDuration: 0.2
+  knockbackForce: 5
+  blinkDuration: 0.1
+  blinkColor: {r: 0.5, g: 0, b: 0.5, a: 0.5}
 --- !u!114 &2897770506607140489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,15 +317,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d30444600372a6a46b2704175a8ecc92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 20
   maxHealth: 20
   setHealth:
     m_PersistentCalls:
       m_Calls: []
   invulnerabilityDuration: 2
-  damageImage: {fileID: 0}
-  flashSpeed: 5
-  flashColor: {r: 1, g: 0, b: 0, a: 0.5}
+  blinkDuration: 1
+  blinkInterval: 0.1
 --- !u!114 &-167474521855338570
 MonoBehaviour:
   m_ObjectHideFlags: 0

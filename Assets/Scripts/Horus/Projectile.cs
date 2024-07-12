@@ -7,15 +7,16 @@ public class Projectile : MonoBehaviour
     public static int skillLevel = 1; // Nivel del proyectil
     public static int baseDamage = 2; // Daño base
     public static float baseSpeed = 6f; // Velocidad del proyectil
-    public float lifeTime = 7f; // Tiempo de vida del proyectil antes de destruirse
+    public float lifeTime = 7f; // Tiempo de vida del proyectil
     private static int killCount = 0;
     private static int skillExperience = 0;
     private static int skillExperiencePerKill = 10;
     private static int skillExperienceRequired = 100;
 
-    private Transform target;
+    private static Transform target;
     private static float finalDamage;
     private static float finalSpeed;
+    private Transform player;
 
     private void Awake()
     {
@@ -24,28 +25,21 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         target = FindClosestEnemy();
-        if (target == null)
-        {
-            Debug.LogWarning("No se encontró ningún enemigo para perseguir.");
-            Destroy(gameObject, 0); // Destruye el proyectil después de un tiempo si no hay enemigo
-        }
-        else
-        {
-            Destroy(gameObject, lifeTime); // Destruye el proyectil después de un tiempo incluso si hay enemigo
-        }
+        Destroy(gameObject, lifeTime); // Destruye el proyectil después de un tiempo
     }
 
     private void Update()
     {
+        target = FindClosestEnemy();
         if (target != null)
         {
             Vector3 direction = target.position - transform.position;
             direction.Normalize();
-
-            // Move the projectile towards the enemy
             transform.position += direction * finalSpeed * Time.deltaTime;
-        } else
+        } 
+        else
         {
             Destroy(gameObject);
         }
@@ -54,16 +48,30 @@ public class Projectile : MonoBehaviour
     private Transform FindClosestEnemy()
     {
         Enemy[] enemies = FindObjectsOfType<Enemy>();
+        SlyanLife[] slyans = FindObjectsOfType<SlyanLife>();
         Transform closestEnemy = null;
         float closestDistance = Mathf.Infinity;
 
+        foreach (SlyanLife slyan in slyans)
+        {
+            if (slyan.CompareTag("Slyan"))
+            {
+                // Priorizar Slyan independientemente de la distancia
+                return slyan.transform;
+            }
+        }
+
+        // Si no hay Slyan, buscar el enemigo más cercano
         foreach (Enemy enemy in enemies)
         {
-            float distance = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distance < closestDistance)
+            if (enemy.CompareTag("Enemy"))
             {
-                closestDistance = distance;
-                closestEnemy = enemy.transform;
+                float distance = Vector3.Distance(transform.position, enemy.transform.position);
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestEnemy = enemy.transform;
+                }
             }
         }
 
@@ -71,31 +79,44 @@ public class Projectile : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
+{
+    Enemy enemy = other.GetComponent<Enemy>();
+    SlyanLife slyan = other.GetComponent<SlyanLife>();
+    
+    if (enemy != null || slyan != null)
     {
-        // Método que se llama cuando el proyectil colisiona con otro objeto.
-        // Si el objeto es un enemigo, se le resta vida y se destruye el
-        // proyectil.
-        Enemy enemy = other.GetComponent<Enemy>();
-        if (enemy != null)
-        {
-            //Debug.Log("Hit enemy: " + other.gameObject.name);
-            bool kill = enemy.Damaged((int)finalDamage); // Assuming Damaged method returns a bool for kill
-            Destroy(gameObject); // Destruye el proyectil al impactar con el enemigo
+        bool targetAlive = true;
 
-            if (!kill)
-            {
-                killCount++;
-                GameManager.instance.IncrementGhoulCount(); //Add count for canvas
-                Debug.Log("Skill kill count = " + killCount);
-                skillExperience += skillExperiencePerKill;
-                if (skillExperience >= skillExperienceRequired)
-                {
-                    skillLevel++;
-                    skillExperience = 0;
-                    Debug.Log("BasicAttack LevelUP = LV." + skillLevel);
-                    UpdateProjectileStats();
-                }
-            }
+        // Verifica si el objeto tiene el tag Slyan
+        if (other.CompareTag("Slyan"))
+        {
+            targetAlive = slyan.Damaged(1); // Daño fijo para Slyan
+        }
+        else if (enemy != null)
+        {
+            targetAlive = enemy.Damaged((int)finalDamage);
+        }
+
+        Destroy(gameObject); // Destruye el proyectil al impactar
+
+        if (!targetAlive)
+        {
+            HandleKillCount();
+        }
+    }
+}
+
+
+    private void HandleKillCount()
+    {
+        killCount++;
+        GameManager.instance.IncrementGhoulCount();
+        skillExperience += skillExperiencePerKill;
+        if (skillExperience >= skillExperienceRequired)
+        {
+            skillLevel++;
+            skillExperience = 0;
+            UpdateProjectileStats();
         }
     }
 
@@ -108,7 +129,5 @@ public class Projectile : MonoBehaviour
         float speedGrowFactor = skillLevel / 30f;
         float speedMultiplierPerLevel = 1f + speedGrowFactor;
         finalSpeed = baseSpeed * speedMultiplierPerLevel;
-
-        Debug.Log("Updated Stats: Damage = " + finalDamage + ", Speed = " + finalSpeed);
     }
 }

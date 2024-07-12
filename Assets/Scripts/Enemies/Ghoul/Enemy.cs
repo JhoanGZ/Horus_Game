@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public float DistanceToPlayer { get; set; }
     public static float gameTime = 0f; // Tiempo de la partida en segundos
     public float baseHitPoints = 3f; // Vida base
     public float lifeMultiplier = 1f; // Multiplicador de vida inicial

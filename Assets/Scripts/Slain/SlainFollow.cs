@@ -1,19 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 public class SlainFollow : MonoBehaviour
 {
     public Transform horus;
     public float moveSpeed = 2.5f; // Speed walk
     public float orbitSpeed = 1f; // Speed around
-    public Animator animator;
-    private bool shouldFollowPlayer = true;
-    public static bool secondPhase = false;
+    public Animator animator; // Ya no es estático
+    public bool shouldFollowPlayer = true; // Ya no es estático
+    public bool secondPhase = false; // Ya no es estático
     private float minDistance = 5f;
     private float maxDistance = 9f;
-    private float iPos = 0.5f;
+    public float iPos = 0.5f;
     public AudioClip secondPhaseAudio;
 
     void Start()
@@ -54,7 +53,6 @@ public class SlainFollow : MonoBehaviour
             }
             else
             {
-
                 // Comportamiento 2da Fase
                 if (!GetComponent<AudioSource>().isPlaying && secondPhaseAudio != null)
                 {
@@ -65,7 +63,7 @@ public class SlainFollow : MonoBehaviour
                 float angle = Time.time * orbitSpeed; // speed around
                 float distance = Mathf.Lerp(minDistance, maxDistance, Mathf.PingPong(angle, 1f));
                 Vector3 circlePosition = horus.position + new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle)) * distance;
-                transform.position = new Vector3(circlePosition.x, 1f, circlePosition.z); // Sey y
+                transform.position = new Vector3(circlePosition.x, 1f, circlePosition.z); // Set Y
             }
         }
 
@@ -75,15 +73,18 @@ public class SlainFollow : MonoBehaviour
             ChangeAnimation();
             iPos = 1f;
             shouldFollowPlayer = false; // stop follow
+            secondPhase = true;
         }
     }
 
-    void ChangeAnimation()
+    public void ChangeAnimation()
     {
         // Play trigger
         if (animator != null)
         {
             animator.SetTrigger("ChangeAnimation");
+            iPos = 1f;
+            Debug.Log("SLYAN --> FASE 2");
         }
     }
 }

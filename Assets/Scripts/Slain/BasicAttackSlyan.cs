@@ -8,9 +8,21 @@ public class BasicAttackSlyan : MonoBehaviour
     public float attackCooldown = 2f;
     private float lastAttackTime;
 
+    private SlainFollow slyanFollow; // Referencia al componente SlainFollow
+
+    void Start()
+    {
+        // Obtener la referencia al componente SlainFollow en el mismo GameObject
+        slyanFollow = GetComponent<SlainFollow>();
+        if (slyanFollow == null)
+        {
+            Debug.LogError("SlainFollow component not found on the GameObject.");
+        }
+    }
+
     void Update()
     {
-        if (SlainFollow.secondPhase && Time.time >= lastAttackTime + attackCooldown)
+        if (slyanFollow != null && slyanFollow.secondPhase && Time.time >= lastAttackTime + attackCooldown)
         {
             int pattern = Random.Range(0, 12);
             switch (pattern)

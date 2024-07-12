@@ -19,7 +19,7 @@ public class BasicAttack : MonoBehaviour
     {
         if (projectilePrefab != null && firePoint != null)
         {
-            Debug.Log("Instanciando proyectil desde prefab: " + projectilePrefab.name);
+            //Debug.Log("Instanciando proyectil desde prefab: " + projectilePrefab.name);
             GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
             Rigidbody rb = projectile.GetComponent<Rigidbody>();
 
