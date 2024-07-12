@@ -381,6 +381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cantMadness: 20
   spawn: {fileID: 1442718761}
+  spawnSlain: {fileID: 1219973179}
   onPause: 0
   panelPause: {fileID: 1265314712}
   targetGhoulText: {fileID: 640440317}
