@@ -8,11 +8,12 @@ public class GameManager : MonoBehaviour
 {
     public int cantMadness;
     public SpawnerGhoul spawn;
+    public SpawnSlain spawnSlain;
     public bool onPause = false; // Verification pause
     [Header("Comandos menu pausa")]
     public GameObject panelPause; // For script GameManager
 
-    public static int deadGhoulCount = 50; // Start of ghoul count decrease
+    public static int deadGhoulCount = 10; // Start of ghoul count decrease
     public static int targetGhoul = 0; // Reach of 0 ghoul
     public Text targetGhoulText;
     public static GameManager instance;
@@ -71,10 +72,17 @@ public class GameManager : MonoBehaviour
         deadGhoulCount--;
         UpdateUI();
 
-        if (deadGhoulCount == targetGhoul)
+        if (deadGhoulCount == 0)
         {
-            // On Target reach start some function to call Boss
+            Debug.Log("Spawning Boss");
+            spawnSlain.SpawnBoss();
+
         }
+        else
+        {
+
+        }
+        
     }
 
     public void UpdateUI() //Update UI for Kill ghouls
