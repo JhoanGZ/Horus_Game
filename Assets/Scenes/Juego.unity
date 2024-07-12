@@ -1386,13 +1386,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706262031}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.06975647, y: 0, z: 0, w: 0.9975641}
   m_LocalPosition: {x: -18.977974, y: 2.39462, z: 6.83589}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &706262033
 MonoBehaviour:
@@ -1941,12 +1941,60 @@ MonoBehaviour:
   grassPrefab: {fileID: 2967323617354237926, guid: 420b1b8f41c83a14480ca9c47edc5061, type: 3}
   player: {fileID: 341343047}
   spawnDistance: 8
-  minGrassPerSpawn: 12
-  maxGrassPerSpawn: 30
+  minGrassPerSpawn: 30
+  maxGrassPerSpawn: 60
   minGrassDistance: 3
   fixedYPosition: 0.1
   spawnInterval: 2
   initialSpawnRadius: 10
+--- !u!1 &1219973177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219973178}
+  - component: {fileID: 1219973179}
+  m_Layer: 0
+  m_Name: SlainSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1219973178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219973177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.03, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1219973179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219973177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d75350af18c5744be46a4cbde40d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossPrefab: {fileID: 4081651850917605402, guid: fd2963d8477f81844954d656f730cef0, type: 3}
+  player: {fileID: 341343047}
+  spawnRadius: 20
+  spawnAnimation: {fileID: 7400000, guid: 21978114487cf88409b75f1b6718e09b, type: 2}
 --- !u!1 &1265314712
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,9 +2122,10 @@ MonoBehaviour:
   player: {fileID: 341343047}
   spawnDistance: 20
   minTreesPerSpawn: 2
-  maxTreesPerSpawn: 5
-  minTreeDistance: 2
+  maxTreesPerSpawn: 4
+  minTreeDistance: 6
   fixedYPosition: 1.6
+  initialSpawnRadius: 6
 --- !u!1 &1310684268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,7 +2546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tree2Prefab: {fileID: 4189153693112466093, guid: b33d1306118132a4aa58d29985d97b8d, type: 3}
   player: {fileID: 341343047}
-  spawnDistance: 10
+  spawnDistance: 20
   minTreesPerSpawn: 2
   maxTreesPerSpawn: 4
   minTreeDistance: 8
