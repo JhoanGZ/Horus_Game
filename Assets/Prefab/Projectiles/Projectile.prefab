@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4085150349901917304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.284327, y: 5.1745677, z: 9.321017}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -150,11 +150,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc7d177bcb8a2f94189c3c86b105c15b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillLevel: 1
-  baseDamage: 2
-  baseSpeed: 6
   lifeTime: 7
-  killCount: 0
-  skillExperience: 0
-  skillExperiencePerKill: 10
-  skillExperienceRequired: 100
