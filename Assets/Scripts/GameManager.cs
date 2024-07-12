@@ -18,9 +18,7 @@ public class GameManager : MonoBehaviour
     public Canvas winImageCanvas;
     public Canvas winCreditsCanvas;
     
-
-
-    public static int deadGhoulCount = 50; // Start of ghoul count decrease
+    public static int deadGhoulCount = 5; // Start of ghoul count decrease
     public static int targetGhoul = 0; // Reach of 0 ghoul
     public Text targetGhoulText;
     public static GameManager instance;
@@ -91,22 +89,16 @@ public class GameManager : MonoBehaviour
 
     public void IncrementGhoulCount()
     {
-        deadGhoulCount--;
-        UpdateUI();
-
-        if (deadGhoulCount <= 0)
+        if (deadGhoulCount > 0)
         {
-            
+            deadGhoulCount--;
+            UpdateUI();
+
             if (deadGhoulCount == 0)
             {
                 Debug.Log("Spawning Boss");
                 spawnSlain.SpawnBoss();
             }
-
-        }
-        else
-        {
-
         }
         
     }

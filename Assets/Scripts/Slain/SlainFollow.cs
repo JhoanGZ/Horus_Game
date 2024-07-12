@@ -5,13 +5,13 @@ using UnityEngine;
 public class SlainFollow : MonoBehaviour
 {
     public Transform horus;
-    public float moveSpeed = 2.5f; // Speed walk
-    public float orbitSpeed = 1f; // Speed around
-    public Animator animator; // Ya no es estático
-    public bool shouldFollowPlayer = true; // Ya no es estático
-    public bool secondPhase = false; // Ya no es estático
+    public float moveSpeed = 3f; // Speed walk
+    public float orbitSpeed = 0.5f; // Speed around
+    public Animator animator;
+    public bool shouldFollowPlayer = true;
+    public  bool secondPhase = false;
     private float minDistance = 5f;
-    private float maxDistance = 9f;
+    private float maxDistance = 7f;
     public float iPos = 0.5f;
     public AudioClip secondPhaseAudio;
 
