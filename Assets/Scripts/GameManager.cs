@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,11 +13,19 @@ public class GameManager : MonoBehaviour
     public bool onPause = false; // Verification pause
     [Header("Comandos menu pausa")]
     public GameObject panelPause; // For script GameManager
+    public GameObject panelUI;
+    public Canvas winScreenCanvas;
+    public Canvas winImageCanvas;
+    public Canvas winCreditsCanvas;
+    
 
-    public static int deadGhoulCount = 10; // Start of ghoul count decrease
+
+    public static int deadGhoulCount = 50; // Start of ghoul count decrease
     public static int targetGhoul = 0; // Reach of 0 ghoul
     public Text targetGhoulText;
     public static GameManager instance;
+    public Image transitionImage;
+    public Text messageText;
 
     void Awake()
     {
@@ -24,10 +33,18 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+
         }
         else
         {
             Destroy(gameObject);
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            winImageCanvas.gameObject.SetActive(false);
+            StartCoroutine(DisplayMessageShowWinAndCredits("Has ganado en esta oportunidad, pero no escaparas...", 5f));
+
         }
     }
 
@@ -64,6 +81,11 @@ public class GameManager : MonoBehaviour
             {
                 spawn.SpawnEnemy();
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            DeadSlain();
         }
     }
 
@@ -129,4 +151,67 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void DeadSlain()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            StartCoroutine(FadeToWhite());
+        }
+    }
+
+    private IEnumerator FadeToWhite()
+    {
+        float duration = 4f; // Duration of the transition
+        float elapsed = 0.0f;
+        Color color = transitionImage.color;
+        panelUI.SetActive(false);
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            color.a = Mathf.Clamp01(elapsed / duration);
+            transitionImage.color = color;
+            yield return null;
+        }
+
+        // Log a message to confirm that the transition is complete
+        SceneManager.LoadScene("Final");
+    }
+
+    private IEnumerator DisplayMessageShowWinAndCredits(string message, float delayToShowWin)
+    {
+        messageText.text = "";
+        winScreenCanvas.gameObject.SetActive(true);
+        winCreditsCanvas.gameObject.SetActive(false);
+
+        foreach (char letter in message.ToCharArray())
+        {
+            messageText.text += letter;
+            yield return new WaitForSeconds(0.15f); 
+        }
+
+        // Esperar el tiempo especificado antes de mostrar la imagen de ganador
+        yield return new WaitForSeconds(delayToShowWin);
+
+        // Desactivar la pantalla de victoria y activar la imagen de ganador
+        winScreenCanvas.gameObject.SetActive(false);
+        winImageCanvas.gameObject.SetActive(true);
+
+        // Esperar hasta que se haga clic con el mouse para mostrar los créditos
+        yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+
+        // Desactivar la imagen de ganador y activar los créditos
+        winImageCanvas.gameObject.SetActive(false);
+        winCreditsCanvas.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(1f);
+
+        // Esperar hasta que se haga clic con el mouse para cargar la escena del menú
+        yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+
+        // Cargar la escena del menú
+        SceneManager.LoadScene("Menu");
+    }
+
 }

@@ -11,6 +11,7 @@ public class SlainFollow : MonoBehaviour
     private float minDistance = 3f;
     private float maxDistance = 3.5f;
     private float iPos = 0.5f;
+    public AudioClip secondPhaseAudio;
 
     void Start()
     {
@@ -53,6 +54,11 @@ public class SlainFollow : MonoBehaviour
             else
             {
                 // Comportamiento 2da Fase
+                if (!GetComponent<AudioSource>().isPlaying && secondPhaseAudio != null)
+                {
+                    GetComponent<AudioSource>().clip = secondPhaseAudio;
+                    GetComponent<AudioSource>().Play();
+                }
                 float angle = Time.time * orbitSpeed; // speed around
                 float distance = Mathf.Lerp(minDistance, maxDistance, Mathf.PingPong(angle, 1f));
                 Vector3 circlePosition = horus.position + new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle)) * distance;
