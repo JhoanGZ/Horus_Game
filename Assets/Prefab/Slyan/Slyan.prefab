@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horus: {fileID: 0}
-  moveSpeed: 3
+  moveSpeed: 4
   orbitSpeed: 1
   animator: {fileID: 0}
   secondPhaseAudio: {fileID: 8300000, guid: 48a0277b0f53bee42bd603e988039318, type: 3}
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a013dd82c2c7f7e48959a4c712622769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 4085150349901917304, guid: b239afedbf8ac7243a4116984582d75a, type: 3}
+  projectilePrefab: {fileID: 1605316232032738335, guid: 94628a2e37674c145b8db1adf9df8fc8, type: 3}
   attackCooldown: 3
 --- !u!114 &837654192772813102
 MonoBehaviour:

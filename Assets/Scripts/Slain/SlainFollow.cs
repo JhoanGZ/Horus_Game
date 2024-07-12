@@ -6,13 +6,13 @@ using static UnityEditor.PlayerSettings;
 public class SlainFollow : MonoBehaviour
 {
     public Transform horus;
-    public float moveSpeed = 2.5f; // Speed walk
-    public float orbitSpeed = 1f; // Speed around
+    public float moveSpeed = 3f; // Speed walk
+    public float orbitSpeed = 0.5f; // Speed around
     public Animator animator;
     private bool shouldFollowPlayer = true;
     public static bool secondPhase = false;
     private float minDistance = 5f;
-    private float maxDistance = 9f;
+    private float maxDistance = 7f;
     private float iPos = 0.5f;
     public AudioClip secondPhaseAudio;
 
