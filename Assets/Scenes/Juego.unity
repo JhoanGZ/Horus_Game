@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basicAttack: {fileID: 754315785}
-  attackInterval: 0.5
+  attackInterval: 0.65
   speed: 6
   dashDuration: 1
   cooldownBar: {fileID: 690116032}
@@ -2352,7 +2352,7 @@ MonoBehaviour:
   ghoulPrefab: {fileID: 1513623606158227772, guid: 191938c28ebea434ca80ecee96c4f739, type: 3}
   player: {fileID: 341343047}
   spawnRadius: 25
-  spawnInterval: 3
+  spawnInterval: 1
 --- !u!1 &1542066942
 GameObject:
   m_ObjectHideFlags: 0
