@@ -129,8 +129,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horus: {fileID: 0}
   moveSpeed: 4
-  orbitSpeed: 1
+  orbitSpeed: 0.5
   animator: {fileID: 0}
+  shouldFollowPlayer: 1
+  secondPhase: 0
+  iPos: 0.5
   secondPhaseAudio: {fileID: 8300000, guid: 48a0277b0f53bee42bd603e988039318, type: 3}
 --- !u!54 &8793850359769424922
 Rigidbody:
@@ -317,6 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d30444600372a6a46b2704175a8ecc92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHealth: 0
   maxHealth: 20
   setHealth:
     m_PersistentCalls:

@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
     public Canvas winImageCanvas;
     public Canvas winCreditsCanvas;
     
-    public static int deadGhoulCount = 5; // Start of ghoul count decrease
-    public static int targetGhoul = 0; // Reach of 0 ghoul
+    public  int deadGhoulCount = 50; // Start of ghoul count decrease
+    public  int targetGhoul = 0; // Reach of 0 ghoul
     public Text targetGhoulText;
     public static GameManager instance;
     public Image transitionImage;
@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
         {
             panelPause.SetActive(false);
             AssignUITextElements();
+            InitializeGame();
             UpdateUI();
         }
     }
@@ -208,6 +209,12 @@ public class GameManager : MonoBehaviour
 
         // Cargar la escena del menú
         SceneManager.LoadScene("Menu");
+    }
+
+    private void InitializeGame()
+    {
+        deadGhoulCount = 5; // Reset the ghoul count to its initial value
+        targetGhoul = 0; // Reset the target ghoul count
     }
 
 }
