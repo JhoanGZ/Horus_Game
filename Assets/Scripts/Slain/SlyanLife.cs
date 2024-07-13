@@ -47,9 +47,8 @@ public class SlyanLife : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            StartCoroutine(Dead());
-            live = false;
-            return live;
+            Destroy(gameObject);
+            GameManager.instance.DeadSlain();
         }
 
         StartCoroutine(InvulnerabilityCoroutine());
@@ -99,7 +98,7 @@ public class SlyanLife : MonoBehaviour
             Destroy(slyan);
         }
 
-        SceneManager.LoadScene("End");
+        SceneManager.LoadScene("Final");
     }
 
     private void PhaseChange()
