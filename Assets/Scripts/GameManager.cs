@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public Canvas winImageCanvas;
     public Canvas winCreditsCanvas;
     
-    public  int deadGhoulCount = 50; // Start of ghoul count decrease
+    public  int deadGhoulCount = 100; // Start of ghoul count decrease
     public  int targetGhoul = 0; // Reach of 0 ghoul
     public Text targetGhoulText;
     public static GameManager instance;

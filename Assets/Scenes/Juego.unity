@@ -388,6 +388,8 @@ MonoBehaviour:
   winScreenCanvas: {fileID: 0}
   winImageCanvas: {fileID: 0}
   winCreditsCanvas: {fileID: 0}
+  deadGhoulCount: 100
+  targetGhoul: 0
   targetGhoulText: {fileID: 640440317}
   transitionImage: {fileID: 1409661671}
   messageText: {fileID: 0}
@@ -1154,7 +1156,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 50
+  m_Text: 100
 --- !u!222 &640440318
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2626,6 +2628,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitalProjectilePrefab: {fileID: 4085150349901917304, guid: 962ef321aef235d4eb58cf1af0a7b4ff, type: 3}
   player: {fileID: 341343047}
-  numberOfProjectiles: 2
+  initialNumberOfProjectiles: 2
   orbitRadius: 3
   orbitSpeed: 0.8
+  skillLevel: 1
+  skillExperience: 0
+  skillExperiencePerKill: 10
+  skillExperienceRequired: 100
