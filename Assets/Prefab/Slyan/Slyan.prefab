@@ -328,6 +328,7 @@ MonoBehaviour:
   invulnerabilityDuration: 2
   blinkDuration: 1
   blinkInterval: 0.1
+  secondPhaseMusic: {fileID: 8300000, guid: e9ab214e551a5bc43971683e11404367, type: 3}
 --- !u!114 &-167474521855338570
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,6 +15,11 @@ public class SlyanLife : MonoBehaviour
     public float blinkInterval = 0.1f;
     private bool isInvulnerable = false;
 
+    private AudioSource audioSource;
+    public AudioClip secondPhaseMusic;
+
+
+
     private SlainFollow slyanFollow;
 
     void Start()
@@ -28,6 +33,12 @@ public class SlyanLife : MonoBehaviour
         if (slyanFollow == null)
         {
             Debug.LogError("SlainFollow component not found on the GameObject.");
+        }
+
+        audioSource = GameManager.instance.GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource component not found on the GameObject.");
         }
     }
 
@@ -109,6 +120,13 @@ public class SlyanLife : MonoBehaviour
             slyanFollow.iPos = 1f;
             slyanFollow.animator.SetTrigger("ChangeAnimation");
             slyanFollow.secondPhase = true;
+
+            if (audioSource != null && secondPhaseMusic != null)
+            {
+                audioSource.clip = secondPhaseMusic;
+                audioSource.volume = 0.4f;
+                audioSource.Play();
+            }
         }
         else
         {
