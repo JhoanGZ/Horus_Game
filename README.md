@@ -4,15 +4,15 @@
 
 ## Overview
 
-This project was developed as part of a university module for video game development within the Software Engineering program. It involved collaborative work between several contributors, 
-each bringing unique skills and perspectives to the table.
+This project was developed as part of a university module for video game development within the Software Engineering program. 
+It involved collaborative work between several contributors, each bringing unique skills and perspectives to the table.
 
 ## Project Description
 
-Our goal was to create an engaging and interactive video game using Unity, with C# as the primary scripting language. The project showcases our ability to work effectively in a team environment, 
-utilizing various technologies and tools to build a functional and enjoyable game.
+Our goal was to create an engaging and interactive video game using Unity, with C# as the primary scripting language. 
+The project showcases our ability to work effectively in a team environment, utilizing various technologies and tools to build a functional and enjoyable game.
 
-Time window for the making of this game was in two weeks and it was an engaging project which I've enjoyed.
+Time window for the making of this game was in two weeks and this was an engaging project which I've personally enjoyed.
 
 ## Technologies Used
 
@@ -39,10 +39,3 @@ Watch our project demo to see the game in action:
 
 [![Project Demo](path/to/demo-thumbnail.jpg)](link-to-demo-video.mp4)
 
-## Installation
-
-To set up the project locally:
-
-1. Clone the repository:
-   ```bash
-   git clone git@github.com:yourusername/your-repository.git
