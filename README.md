@@ -1,5 +1,3 @@
-# Collaborative Video Game Development Project
-
 ![HOrus Dungaen](path/to/banner-image.jpg)
 
 ## Overview
