@@ -1,10 +1,11 @@
-## Horus Dungean - Horde Survival Game
+## Horus Dungean - Horde Survival Game 
 ![HOrus Dungaen](https://github.com/JhoanGZ/Horus_Game/blob/main/Profile_Assets/Horus_Image)
 
 ## Overview
 
 This project was developed as part of a university module for video game development within the Software Engineering program. 
 It involved collaborative work between several contributors, each bringing unique skills and perspectives to the table.
+Conceived to be a 3d game with pixel 2d assets and pixel art style. 
 
 ## Project Description
 
@@ -39,5 +40,5 @@ Here are some screenshots of the game in action:
 You can download the game and if support the project.
 Donate if you like!
 
-(https://chumsteam.itch.io/horus-dungaen)
+https://chumsteam.itch.io/horus-dungaen
 
