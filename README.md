@@ -29,12 +29,15 @@ Time window for the making of this game was in two weeks and this was an engagin
 
 Here are some screenshots of the game in action:
 
-![Screenshot 1](path/to/screenshot1.jpg)
-![Screenshot 2](path/to/screenshot2.jpg)
+![Screenshot 1](https://github.com/JhoanGZ/Horus_Game/blob/main/Profile_Assets/Intro.jpg)
+![Screenshot 2](https://github.com/JhoanGZ/Horus_Game/blob/main/Profile_Assets/eTXUwL.png)
+![Screenshot 3](https://github.com/JhoanGZ/Horus_Game/blob/main/Profile_Assets/77SQEA.png)
+![Screenshot 4](https://github.com/JhoanGZ/Horus_Game/blob/main/Profile_Assets/9f1iZz.png)
 
-## Demo Video
+## Demo 
 
-Watch our project demo to see the game in action:
+You can download the game and if support the project.
+Donate if you like!
 
-[![Project Demo](path/to/demo-thumbnail.jpg)](link-to-demo-video.mp4)
+[![Link Demo](https://chumsteam.itch.io/horus-dungaen))
 
