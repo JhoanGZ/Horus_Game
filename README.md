@@ -1,5 +1,5 @@
 ## Horde Survival Game
-![HOrus Dungaen](path/to/banner-image.jpg)
+![HOrus Dungaen]([path/to/banner-image.jpg](https://github.com/JhoanGZ/Horus_Game/blob/main/Profile_Assets/Horus_Image))
 
 ## Overview
 
