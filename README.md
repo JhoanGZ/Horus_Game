@@ -44,8 +44,7 @@ Here are some screenshots of the game in action:
 
 ## Demo 
 
-You can download the game and if support the project.
-Donate if you like!
-
+Link to download the demos
 https://chumsteam.itch.io/horus-dungaen
-
+If you like support the project with your like!
+Also Donations are welcome 😊
