@@ -23,7 +23,7 @@ Time window for the making of this game was in two weeks and this was an engagin
 
 - **Interactive Gameplay**: Engaging game mechanics designed to keep players entertained.
 - **Custom Assets**: Original artwork and assets created specifically for this project.
-- **Multi-level Design**: Multiple levels with varying challenges and objectives.
+- **Dynamic Asset / Mobs Design**: Dynamic spawning system.
 
 ## Screenshots
 
