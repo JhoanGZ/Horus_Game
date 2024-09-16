@@ -1,11 +1,12 @@
 ## Horus Dungean - Horde Survival Game 
 ![HOrus Dungaen](https://github.com/JhoanGZ/Horus_Game/blob/main/Profile_Assets/Horus_Image)
 
+
 ## Overview
 
 This project was developed as part of a university module for video game development within the Software Engineering program. 
 It involved collaborative work between several contributors, each bringing unique skills and perspectives to the table.
-Conceived to be a 3d game with pixel 2d assets and pixel art style. 
+
 
 ## Project Description
 
@@ -13,6 +14,12 @@ Our goal was to create an engaging and interactive video game using Unity, with 
 The project showcases our ability to work effectively in a team environment, utilizing various technologies and tools to build a functional and enjoyable game.
 
 Time window for the making of this game was in two weeks and this was an engaging project which I've personally enjoyed.
+
+
+## Project Concept
+
+Conceived to be a 3d game with pixel 2d assets and pixel art style. Inspired in various titles as Castlevania, Darkest Dungeon, Vampire Hunter and Diablo.
+
 
 ## Technologies Used
 
