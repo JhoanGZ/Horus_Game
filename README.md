@@ -1,4 +1,4 @@
-## Horde Survival Game
+## Horus Dungean - Horde Survival Game
 ![HOrus Dungaen](https://github.com/JhoanGZ/Horus_Game/blob/main/Profile_Assets/Horus_Image)
 
 ## Overview
