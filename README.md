@@ -25,6 +25,7 @@ Conceived to be a 3d game with pixel 2d assets and pixel art style. Inspired in 
 
 - **Unity**: The game engine used for development, providing a comprehensive environment for game creation and management.
 - **C#**: The primary scripting language used to implement game logic, mechanics, and interactions.
+- **ShaderLab**: Unity's built in dependency needed to built shadows, fog and shaders in multiple objects in the game.
 - **Git**: Version control system for managing code changes and collaboration.
 
 ## Features
